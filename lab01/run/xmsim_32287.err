@@ -1,0 +1,60 @@
+csi-xmsim - CSI: Command line:
+xmsim
+    -f /home/student/bbialkowski/VDIC/lab01/run/INCA_libs/run.lnx86.23.03.d/cadence33_32287/xmsim.args
+        -INPUT @source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+        +nowarnDSEM2009
+        +nowarnDSEMEL
+        +nowarnCGDEFN
+        +nowarnCOVUTA
+        +nowarnBADPRF
+        +nowarnXCLGNOPTM
+        +nowarnRNDXCELON
+        +nowarnSAWSTP
+        -amsdlibdir ./INCA_libs/AMSD
+        -uvmhome /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d
+        -sv_lib /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmpli.so
+        -NOWARN DSEM2009
+        -NOWARN DSEMEL
+        -NOWARN CGDEFN
+        -NOWARN COVUTA
+        -NOWARN BADPRF
+        -NOWARN XCLGNOPTM
+        -NOWARN RNDXCELON
+        -NOWARN SAWSTP
+        -NOCOPYRIGHT
+        -COVOVERWRITE
+        +UVM_TESTNAME=lab01_example
+        -RUN
+        -SV_LIB /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/libuvmdpi.so
+        +EMGRLOG xrun_test_lab01_example.log
+        -XLSTIME 1729190003
+        -XLKEEP
+        -XLMODE ./INCA_libs/run.lnx86.23.03.d
+        -RUNMODE
+        -CDSLIB ./INCA_libs/run.lnx86.23.03.d/cds.lib
+        -HDLVAR ./INCA_libs/run.lnx86.23.03.d/hdl.var
+        -XLNAME xrun
+        -XLVERSION TOOL:	xrun	23.03-s007
+        -XLNAME ./INCA_libs/run.lnx86.23.03.d/cadence33_32287
+    -CHECK_VERSION TOOL:	xrun	23.03-s007
+    -LOG_FD 4
+    -LOG_FD_NAME xrun_test_lab01_example.log
+    -cmdnopsim
+    -runlock /home/student/bbialkowski/VDIC/lab01/run/INCA_libs/run.lnx86.23.03.d/.xmlib.lock
+    -runscratch /home/student/bbialkowski/VDIC/lab01/run/INCA_libs/run.lnx86.23.03.d/cadence33_32287
+
+csi-xmsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 525272730 NS + 0
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	xmsim	23.03-s007
+  HOSTNAME: cadence33
+  OPERATING SYSTEM: Linux 3.10.0-1160.118.1.el7.x86_64 #1 SMP Wed Apr 24 16:01:50 UTC 2024 x86_64
+  MESSAGE: sv_seghandler - trapno -1 addr(0x18)
+-----------------------------------------------------------------
+
+csi-xmsim - CSI: Cadence Support Investigation, recording details
+csi-xmsim - CSI: investigation complete took 0.000 secs, send this file to Cadence Support

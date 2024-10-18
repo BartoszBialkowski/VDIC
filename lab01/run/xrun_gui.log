@@ -1,0 +1,733 @@
+TOOL:	xrun	23.03-s007: Started on Oct 18, 2024 at 13:15:25 CEST
+xrun
+	-F ../tb/tb.f
+		../../common/fifomult2024.svp
+		fifomult2024_tb.sv
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs_gui
+	+access+r
+	+gui
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	+UVM_TESTNAME=lab01_example
+	-l xrun_gui.log
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+
+	Extracting FSMs for coverage:
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           46      46
+		Scalar wires:        13       -
+		Vectored wires:       2       -
+		Always blocks:        3       3
+		Initial blocks:       4       4
+		Final blocks:         1       1
+		Cont. assignments:    4       5
+		Pseudo assignments:   1       -
+	Writing initial simulation snapshot: worklib.top:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.clk top.data_in top.data_in_parity top.data_in_parity_error top.data_in_valid top.data_out top.data_out_parity top.data_out_valid
+Created probe 1
+xcelium> run
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=27122 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294940174. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-8853 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294958443. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-5859 data_in_B=18723 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4185269239. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1594 data_in_B=700 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4293851496. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=32524 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1065713908. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-4803 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:       4803. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=19273 data_in_B=-20694 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3896131834. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-3428 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:       3428. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-12530 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  410583040. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-4778 data_in_B=30311 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4150141338. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-15248 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294952048. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=31226 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      31226. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32549 data_in_B=11129 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3932729475. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=17011 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3737550848. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-16225 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      16225. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-6600 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4078705096. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-13973 data_in_B=-8778 parity_A=1 parity_B=0 
+Expected data:           0  received data:  122654994. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-2566 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:       2566. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-20286 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294947010. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-1576 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4243326504. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=14852 parity_A=0 parity_B=1 
+Expected data:           0  received data:  486655484. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=17020 parity_A=1 parity_B=1 
+Expected data:           0  received data:      17020. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-4541 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4146172349. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=17017 parity_A=1 parity_B=0 
+Expected data:           0  received data:      17017. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=5332 data_in_B=16797 parity_A=0 parity_B=1 
+Expected data:           0  received data:   89561604. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-18001 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3705128529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=14305 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      14305. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-3771 data_in_B=-8103 parity_A=1 parity_B=0 
+Expected data:           0  received data:   30556413. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-29898 parity_A=1 parity_B=0 
+Expected data:           0  received data:  979697664. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-4950 parity_A=0 parity_B=1 
+Expected data:           0  received data:  162201600. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=13827 data_in_B=-8963 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4171035895. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-13508 data_in_B=21848 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3999844512. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-7260 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294960036. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=5076 parity_A=0 parity_B=1 
+Expected data:           0  received data:       5076. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-14321 data_in_B=-4192 parity_A=1 parity_B=0 
+Expected data:           0  received data:   60033632. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=11278 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3925409792. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=29829 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294937467. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=6897 data_in_B=-20817 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4151392447. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-3900 parity_A=0 parity_B=1 
+Expected data:           0  received data:  127795200. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-26316 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294940980. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-2293 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4219832565. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-10621 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3946948989. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-15597 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:  511082496. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=9737 data_in_B=-11075 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4187130021. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=19657 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  644100919. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1638 data_in_B=25422 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4253326060. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=98 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:    3211166. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=10879 parity_A=1 parity_B=0 
+Expected data:           0  received data:      10879. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=21287 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3597434880. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=12146 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294955150. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-3408 parity_A=0 parity_B=1 
+Expected data:           0  received data:       3408. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-10056 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294957240. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=10164 parity_A=1 parity_B=0 
+Expected data:           0  received data:  333043788. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+19990 Clock cycles elapsed: 1000
+Test FAILED for data_in_A=-32768 data_in_B=4944 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4132962304. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-28644 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294938652. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-3751 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  122912768. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=23500 data_in_B=5240 parity_A=1 parity_B=0 
+Expected data:           0  received data:  123140000. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-4361 data_in_B=-13763 parity_A=0 parity_B=1 
+Expected data:           0  received data:   60020443. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-16850 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  552140800. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-3529 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:       3529. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-11990 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294955306. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-17170 data_in_B=740 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4282261496. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-16335 parity_A=1 parity_B=0 
+Expected data:           0  received data:  535265280. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32539 data_in_B=-29802 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3325240018. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-23791 data_in_B=10303 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4049848623. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-22723 parity_A=0 parity_B=1 
+Expected data:           0  received data:      22723. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=14802 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  485017134. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-29710 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294937586. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-25874 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294941422. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-28668 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      28668. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-22752 data_in_B=21541 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3804866464. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1198 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:   39254866. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-28202 data_in_B=23269 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3638734958. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=24404 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294942892. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=17458 data_in_B=31547 parity_A=0 parity_B=1 
+Expected data:           0  received data:  550747526. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=29512 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3327918080. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-18794 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3679144298. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=2126 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4225302528. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-5332 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data:  174718976. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-1986 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294965310. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-15069 data_in_B=-26596 parity_A=1 parity_B=1 
+Expected data:           0  received data:  400775124. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-160 parity_A=0 parity_B=1 
+Expected data:           0  received data:    5242880. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32024 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294935272. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=30376 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294936920. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=3126 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  102429642. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=13961 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  457460087. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=11090 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3931570176. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=22113 data_in_B=-6232 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4157159080. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=22117 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  724707739. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=26940 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3412197376. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-15436 data_in_B=-22303 parity_A=1 parity_B=0 
+Expected data:           0  received data:  344269108. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-19583 parity_A=0 parity_B=1 
+Expected data:           0  received data:      19583. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-260 data_in_B=22791 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4289041636. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-29888 parity_A=0 parity_B=1 
+Expected data:           0  received data:      29888. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=20618 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3619356672. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-10148 parity_A=1 parity_B=0 
+Expected data:           0  received data:      10148. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-25072 data_in_B=-21288 parity_A=1 parity_B=0 
+Expected data:           0  received data:  533732736. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-30018 data_in_B=-10138 parity_A=1 parity_B=0 
+Expected data:           0  received data:  304322484. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-31063 data_in_B=28715 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3402993251. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=24240 data_in_B=22108 parity_A=0 parity_B=1 
+Expected data:           0  received data:  535897920. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=14576 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294952720. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=20454 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3624730624. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-18387 parity_A=0 parity_B=1 
+Expected data:           0  received data:      18387. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-27476 data_in_B=19817 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3750475404. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=21843 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3579215872. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=11985 parity_A=1 parity_B=0 
+Expected data:           0  received data:      11985. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39990 Clock cycles elapsed: 2000
+Test FAILED for data_in_A=7029 data_in_B=-25324 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4116964900. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-3303 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294963993. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=7899 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  258826533. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=30188 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3305766912. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-14023 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3835475655. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-1 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=29465 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  965479655. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=28647 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      28647. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-20489 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294946807. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=19944 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3641442304. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-34 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4293853218. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-18206 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3698411294. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=19262 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  631157954. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-23368 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3529268040. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-7563 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294959733. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=15355 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3791814656. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=23852 data_in_B=-4606 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4185104984. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=15755 parity_A=1 parity_B=0 
+Expected data:           0  received data:      15755. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=5415 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  177433305. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=25790 data_in_B=-15467 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3896073366. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=10673 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  349722191. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-15736 parity_A=1 parity_B=0 
+Expected data:           0  received data:      15736. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1328 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:   43515904. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=6775 data_in_B=-25988 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4118898596. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=26159 data_in_B=10766 parity_A=0 parity_B=1 
+Expected data:           0  received data:  281627794. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-28542 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  935264256. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=12130 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  397463710. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=23096 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  756786632. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=6743 data_in_B=3699 parity_A=0 parity_B=1 
+Expected data:           0  received data:   24942357. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-6683 data_in_B=-13100 parity_A=0 parity_B=1 
+Expected data:           0  received data:   87547300. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=30637 parity_A=1 parity_B=0 
+Expected data:           0  received data:      30637. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=28547 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      28547. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-5227 data_in_B=-210 parity_A=1 parity_B=0 
+Expected data:           0  received data:    1097670. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-9540 parity_A=1 parity_B=1 
+Expected data:           0  received data:  312606720. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1465 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294965831. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32613 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934683. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1218 data_in_B=-24808 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4264751152. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-9654 data_in_B=8092 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4216847128. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-5936 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:  194510848. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-16020 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294951276. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=18004 data_in_B=22923 parity_A=1 parity_B=0 
+Expected data:           0  received data:  412705692. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-3909 data_in_B=31756 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4170833092. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-30540 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3294263116. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=20784 parity_A=0 parity_B=1 
+Expected data:           0  received data:  681029328. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32411 data_in_B=-24228 parity_A=1 parity_B=0 
+Expected data:           0  received data:  785253708. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=26754 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3418292224. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-8798 data_in_B=19040 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4127453376. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=12679 data_in_B=3383 parity_A=1 parity_B=0 
+Expected data:           0  received data:   42893057. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-14761 data_in_B=-20006 parity_A=1 parity_B=0 
+Expected data:           0  received data:  295308566. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-1234 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4254532818. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=14494 data_in_B=-3646 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4242122172. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-25885 data_in_B=-18393 parity_A=1 parity_B=0 
+Expected data:           0  received data:  476102805. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-22760 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294944536. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=29942 parity_A=1 parity_B=0 
+Expected data:           0  received data:  981109514. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-30688 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3289413600. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=5188 parity_A=0 parity_B=1 
+Expected data:           0  received data:       5188. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-19837 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294947459. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=23746 parity_A=1 parity_B=1 
+Expected data:           0  received data:      23746. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=14108 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3832676352. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=1 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-6861 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  224821248. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=10989 data_in_B=26403 parity_A=0 parity_B=1 
+Expected data:           0  received data:  290142567. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=18365 parity_A=1 parity_B=0 
+Expected data:           0  received data:  601765955. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=31171 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294936125. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-25941 data_in_B=31797 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3470121319. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=10923 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3937042432. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+59990 Clock cycles elapsed: 3000
+Test FAILED for data_in_A=32767 data_in_B=19729 parity_A=1 parity_B=1 
+Expected data:           0  received data:  646460143. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-9348 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294957948. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=3667 data_in_B=-15859 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4236812343. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=20878 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  684109426. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-7837 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  256802816. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=10457 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294956839. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-26091 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  854949888. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32711 data_in_B=-20321 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3630247065. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=3071 data_in_B=3288 parity_A=1 parity_B=0 
+Expected data:           0  received data:   10097448. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-16588 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294950708. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-15610 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3783474426. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=2368 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294964928. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=4971 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294962325. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=25839 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  846666513. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-20954 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3608367578. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-22184 data_in_B=-7264 parity_A=1 parity_B=1 
+Expected data:           0  received data:  161144576. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-7901 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294959395. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=26367 parity_A=1 parity_B=0 
+Expected data:           0  received data:  863967489. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=28734 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      28734. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=26276 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  860985692. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-3434 parity_A=1 parity_B=0 
+Expected data:           0  received data:  112525312. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=10859 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3939139584. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=4472 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294962824. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=8942 data_in_B=-12653 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4181824170. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=22213 data_in_B=-16214 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3934805714. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-8008 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294959288. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=17946 data_in_B=-2260 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4254409336. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-30202 data_in_B=25813 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3515363070. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=15423 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3789586432. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-26537 parity_A=0 parity_B=1 
+Expected data:           0  received data:  869564416. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-22965 data_in_B=2020 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4248577996. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-26741 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294940555. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1648 data_in_B=-3978 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4288411552. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=24074 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3506110464. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-13896 parity_A=0 parity_B=1 
+Expected data:           0  received data:      13896. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=8712 data_in_B=7335 parity_A=1 parity_B=1 
+Expected data:           0  received data:   63902520. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-8707 parity_A=0 parity_B=1 
+Expected data:           0  received data:       8707. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=25013 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      25013. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=13347 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  437341149. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-18135 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  594247680. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-29297 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  960004096. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-12713 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3878400425. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=21131 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      21131. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-26075 data_in_B=17032 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3850857896. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-29448 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3330044680. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=32767 data_in_B=-32139 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3241868683. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-6382 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294960914. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=9400 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3986948096. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-12565 data_in_B=12897 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4132916491. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=24292 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      24292. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-5490 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294961806. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=4050 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  132706350. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=17173 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      17173. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+79990 Clock cycles elapsed: 4000
+[1;30m[101m-----------------------------------
+----------- Test FAILED -----------
+-----------------------------------[0m
+
+Simulation complete via $finish(1) at time 80050 NS + 3
+../tb/fifomult2024_tb.sv:209     $finish;
+xcelium> 

@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++compile
++sv
+-f
+/home/student/bbialkowski/VDIC/.dvt/lab01.build

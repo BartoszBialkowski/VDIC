@@ -1,0 +1,8 @@
+Folders:
+
+xcelium.d|INCA.*|waves.shm|.simvision|cov_work
+
+Files:
+
+.*\.log|.*\.history|.*\.key
+

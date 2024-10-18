@@ -1,0 +1,2358 @@
+	Top level design units:
+		top
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+0 DEBUG: reset_fifo
+100 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+200 DEBUG: get_excepted(1,1)
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+280 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+360 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+440 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+520 DEBUG: get_excepted(-1,27122)
+Test FAILED for data_in_A=-1 data_in_B=27122 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294940174. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+600 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+680 DEBUG: get_excepted(1,-30966)
+Test PASSED for data_in_A=1 data_in_B=-30966 parity_A=0 parity_B=0
+760 DEBUG: get_excepted(-1,1)
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+840 DEBUG: get_excepted(1,-8853)
+Test FAILED for data_in_A=1 data_in_B=-8853 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294958443. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+920 DEBUG: get_excepted(-5859,18723)
+Test FAILED for data_in_A=-5859 data_in_B=18723 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4185269239. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+1000 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+1080 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+1160 DEBUG: get_excepted(-1594,700)
+Test FAILED for data_in_A=-1594 data_in_B=700 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4293851496. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+1240 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+1320 DEBUG: get_excepted(-1,19221)
+Test PASSED for data_in_A=-1 data_in_B=19221 parity_A=0 parity_B=0
+1400 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+1480 DEBUG: get_excepted(0,22175)
+Test PASSED for data_in_A=0 data_in_B=22175 parity_A=0 parity_B=0
+1560 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+1640 DEBUG: get_excepted(32767,32524)
+Test FAILED for data_in_A=32767 data_in_B=32524 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1065713908. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+1720 DEBUG: get_excepted(-4803,-1)
+Test FAILED for data_in_A=-4803 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:       4803. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+1800 DEBUG: get_excepted(32767,-2349)
+Test PASSED for data_in_A=32767 data_in_B=-2349 parity_A=0 parity_B=0
+1880 DEBUG: get_excepted(19273,-20694)
+Test FAILED for data_in_A=19273 data_in_B=-20694 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3896131834. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+1960 DEBUG: get_excepted(-3428,-1)
+Test FAILED for data_in_A=-3428 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:       3428. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+2040 DEBUG: get_excepted(-22481,22111)
+Test PASSED for data_in_A=-22481 data_in_B=22111 parity_A=0 parity_B=0
+2120 DEBUG: get_excepted(6886,-1)
+Test PASSED for data_in_A=6886 data_in_B=-1 parity_A=0 parity_B=0
+2200 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+2280 DEBUG: get_excepted(32767,-32768)
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+2360 DEBUG: get_excepted(-12530,-32768)
+Test FAILED for data_in_A=-12530 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  410583040. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+2440 DEBUG: get_excepted(-4778,30311)
+Test FAILED for data_in_A=-4778 data_in_B=30311 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4150141338. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+2520 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+2600 DEBUG: get_excepted(11268,32767)
+Test PASSED for data_in_A=11268 data_in_B=32767 parity_A=0 parity_B=0
+2680 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+2760 DEBUG: get_excepted(29077,-25852)
+Test PASSED for data_in_A=29077 data_in_B=-25852 parity_A=0 parity_B=0
+2840 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=0
+2920 DEBUG: get_excepted(-25554,0)
+Test PASSED for data_in_A=-25554 data_in_B=0 parity_A=0 parity_B=0
+3000 DEBUG: get_excepted(32767,-32768)
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3080 DEBUG: get_excepted(1,-15248)
+Test FAILED for data_in_A=1 data_in_B=-15248 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294952048. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3160 DEBUG: get_excepted(31226,1)
+Test FAILED for data_in_A=31226 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      31226. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3240 DEBUG: get_excepted(14230,0)
+Test PASSED for data_in_A=14230 data_in_B=0 parity_A=1 parity_B=1
+3320 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3400 DEBUG: get_excepted(-32549,11129)
+Test FAILED for data_in_A=-32549 data_in_B=11129 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3932729475. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3480 DEBUG: get_excepted(30881,-27056)
+Test PASSED for data_in_A=30881 data_in_B=-27056 parity_A=0 parity_B=0
+3560 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+3640 DEBUG: get_excepted(17011,-32768)
+Test FAILED for data_in_A=17011 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3737550848. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3720 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=1
+3800 DEBUG: get_excepted(-16225,-1)
+Test FAILED for data_in_A=-16225 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      16225. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3880 DEBUG: get_excepted(-6600,32767)
+Test FAILED for data_in_A=-6600 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4078705096. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+3960 DEBUG: get_excepted(-13973,-8778)
+Test FAILED for data_in_A=-13973 data_in_B=-8778 parity_A=1 parity_B=0 
+Expected data:           0  received data:  122654994. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+4040 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+4120 DEBUG: get_excepted(-2566,-1)
+Test FAILED for data_in_A=-2566 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:       2566. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+4200 DEBUG: get_excepted(-32768,-32768)
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+4280 DEBUG: get_excepted(32767,27387)
+Test PASSED for data_in_A=32767 data_in_B=27387 parity_A=0 parity_B=0
+4360 DEBUG: get_excepted(32767,18549)
+Test PASSED for data_in_A=32767 data_in_B=18549 parity_A=0 parity_B=0
+4440 DEBUG: get_excepted(0,-32357)
+Test PASSED for data_in_A=0 data_in_B=-32357 parity_A=1 parity_B=0
+4520 DEBUG: get_excepted(1,-20286)
+Test FAILED for data_in_A=1 data_in_B=-20286 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294947010. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+4600 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=1
+4680 DEBUG: get_excepted(32767,-1576)
+Test FAILED for data_in_A=32767 data_in_B=-1576 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4243326504. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+4760 DEBUG: get_excepted(-1310,-32768)
+Test PASSED for data_in_A=-1310 data_in_B=-32768 parity_A=0 parity_B=0
+4840 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+4920 DEBUG: get_excepted(32767,23937)
+Test PASSED for data_in_A=32767 data_in_B=23937 parity_A=0 parity_B=0
+5000 DEBUG: get_excepted(32767,14852)
+Test FAILED for data_in_A=32767 data_in_B=14852 parity_A=0 parity_B=1 
+Expected data:           0  received data:  486655484. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+5080 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+5160 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+5240 DEBUG: get_excepted(1,-124)
+Test PASSED for data_in_A=1 data_in_B=-124 parity_A=0 parity_B=0
+5320 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+5400 DEBUG: get_excepted(32767,32767)
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+5480 DEBUG: get_excepted(1,17020)
+Test FAILED for data_in_A=1 data_in_B=17020 parity_A=1 parity_B=1 
+Expected data:           0  received data:      17020. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+5560 DEBUG: get_excepted(0,3462)
+Test PASSED for data_in_A=0 data_in_B=3462 parity_A=0 parity_B=0
+5640 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=1 parity_B=0
+5720 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=0
+5800 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+5880 DEBUG: get_excepted(32767,-4541)
+Test FAILED for data_in_A=32767 data_in_B=-4541 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4146172349. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+5960 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+6040 DEBUG: get_excepted(31532,-32768)
+Test PASSED for data_in_A=31532 data_in_B=-32768 parity_A=0 parity_B=0
+6120 DEBUG: get_excepted(-15625,22620)
+Test PASSED for data_in_A=-15625 data_in_B=22620 parity_A=0 parity_B=0
+6200 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+6280 DEBUG: get_excepted(1,17017)
+Test FAILED for data_in_A=1 data_in_B=17017 parity_A=1 parity_B=0 
+Expected data:           0  received data:      17017. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+6360 DEBUG: get_excepted(29583,10723)
+Test PASSED for data_in_A=29583 data_in_B=10723 parity_A=0 parity_B=0
+6440 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+6520 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=1
+6600 DEBUG: get_excepted(-32768,-28020)
+Test PASSED for data_in_A=-32768 data_in_B=-28020 parity_A=0 parity_B=0
+6680 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+6760 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=1
+6840 DEBUG: get_excepted(1,-1)
+Test FAILED for data_in_A=1 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+6920 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+7000 DEBUG: get_excepted(-26746,32767)
+Test PASSED for data_in_A=-26746 data_in_B=32767 parity_A=0 parity_B=0
+7080 DEBUG: get_excepted(-32768,-32768)
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+7160 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=0 parity_B=0
+7240 DEBUG: get_excepted(-32768,-4188)
+Test PASSED for data_in_A=-32768 data_in_B=-4188 parity_A=0 parity_B=0
+7320 DEBUG: get_excepted(5332,16797)
+Test FAILED for data_in_A=5332 data_in_B=16797 parity_A=0 parity_B=1 
+Expected data:           0  received data:   89561604. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+7400 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+7480 DEBUG: get_excepted(25059,-1)
+Test PASSED for data_in_A=25059 data_in_B=-1 parity_A=0 parity_B=0
+7560 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+7640 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+7720 DEBUG: get_excepted(10647,30630)
+Test PASSED for data_in_A=10647 data_in_B=30630 parity_A=0 parity_B=0
+7800 DEBUG: get_excepted(-10647,-32768)
+Test PASSED for data_in_A=-10647 data_in_B=-32768 parity_A=0 parity_B=0
+7880 DEBUG: get_excepted(-6768,32767)
+Test PASSED for data_in_A=-6768 data_in_B=32767 parity_A=0 parity_B=0
+7960 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+8040 DEBUG: get_excepted(0,-4474)
+Test PASSED for data_in_A=0 data_in_B=-4474 parity_A=0 parity_B=0
+8120 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+8200 DEBUG: get_excepted(32767,24321)
+Test PASSED for data_in_A=32767 data_in_B=24321 parity_A=0 parity_B=0
+8280 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+8360 DEBUG: get_excepted(-18001,32767)
+Test FAILED for data_in_A=-18001 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3705128529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+8440 DEBUG: get_excepted(14305,1)
+Test FAILED for data_in_A=14305 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      14305. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+8520 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+8600 DEBUG: get_excepted(32767,5486)
+Test PASSED for data_in_A=32767 data_in_B=5486 parity_A=0 parity_B=0
+8680 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=1 parity_B=0
+8760 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+8840 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+8920 DEBUG: get_excepted(-25782,32767)
+Test PASSED for data_in_A=-25782 data_in_B=32767 parity_A=0 parity_B=0
+9000 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+9080 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+9160 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+9240 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+9320 DEBUG: get_excepted(-5939,0)
+Test PASSED for data_in_A=-5939 data_in_B=0 parity_A=1 parity_B=1
+9400 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+9480 DEBUG: get_excepted(22565,0)
+Test PASSED for data_in_A=22565 data_in_B=0 parity_A=1 parity_B=0
+9560 DEBUG: get_excepted(-21639,0)
+Test PASSED for data_in_A=-21639 data_in_B=0 parity_A=0 parity_B=1
+9640 DEBUG: get_excepted(780,25044)
+Test PASSED for data_in_A=780 data_in_B=25044 parity_A=0 parity_B=0
+9720 DEBUG: get_excepted(-16396,1)
+Test PASSED for data_in_A=-16396 data_in_B=1 parity_A=0 parity_B=0
+9800 DEBUG: get_excepted(-1,1)
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+9880 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+9960 DEBUG: get_excepted(12776,0)
+Test PASSED for data_in_A=12776 data_in_B=0 parity_A=0 parity_B=0
+10040 DEBUG: get_excepted(-22976,1)
+Test PASSED for data_in_A=-22976 data_in_B=1 parity_A=0 parity_B=0
+10120 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+10200 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+10280 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+10360 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+10440 DEBUG: get_excepted(-1,25607)
+Test PASSED for data_in_A=-1 data_in_B=25607 parity_A=0 parity_B=0
+10520 DEBUG: get_excepted(-3771,-8103)
+Test FAILED for data_in_A=-3771 data_in_B=-8103 parity_A=1 parity_B=0 
+Expected data:           0  received data:   30556413. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+10600 DEBUG: get_excepted(-2928,-1)
+Test PASSED for data_in_A=-2928 data_in_B=-1 parity_A=0 parity_B=0
+10680 DEBUG: get_excepted(-9776,28120)
+Test PASSED for data_in_A=-9776 data_in_B=28120 parity_A=0 parity_B=0
+10760 DEBUG: get_excepted(-28164,-32768)
+Test PASSED for data_in_A=-28164 data_in_B=-32768 parity_A=0 parity_B=0
+10840 DEBUG: get_excepted(1,-16141)
+Test PASSED for data_in_A=1 data_in_B=-16141 parity_A=0 parity_B=0
+10920 DEBUG: get_excepted(-32768,20634)
+Test PASSED for data_in_A=-32768 data_in_B=20634 parity_A=0 parity_B=0
+11000 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+11080 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+11160 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+11240 DEBUG: get_excepted(10413,0)
+Test PASSED for data_in_A=10413 data_in_B=0 parity_A=0 parity_B=0
+11320 DEBUG: get_excepted(-11749,0)
+Test PASSED for data_in_A=-11749 data_in_B=0 parity_A=0 parity_B=1
+11400 DEBUG: get_excepted(-32768,-29898)
+Test FAILED for data_in_A=-32768 data_in_B=-29898 parity_A=1 parity_B=0 
+Expected data:           0  received data:  979697664. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+11480 DEBUG: get_excepted(-32768,-4950)
+Test FAILED for data_in_A=-32768 data_in_B=-4950 parity_A=0 parity_B=1 
+Expected data:           0  received data:  162201600. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+11560 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+11640 DEBUG: get_excepted(-32768,1217)
+Test PASSED for data_in_A=-32768 data_in_B=1217 parity_A=0 parity_B=0
+11720 DEBUG: get_excepted(32767,-2369)
+Test PASSED for data_in_A=32767 data_in_B=-2369 parity_A=0 parity_B=0
+11800 DEBUG: get_excepted(-13182,-1)
+Test PASSED for data_in_A=-13182 data_in_B=-1 parity_A=0 parity_B=0
+11880 DEBUG: get_excepted(5361,1)
+Test PASSED for data_in_A=5361 data_in_B=1 parity_A=0 parity_B=0
+11960 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=0
+12040 DEBUG: get_excepted(13827,-8963)
+Test FAILED for data_in_A=13827 data_in_B=-8963 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4171035895. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+12120 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=1
+12200 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=1 parity_B=1
+12280 DEBUG: get_excepted(-21509,-16617)
+Test PASSED for data_in_A=-21509 data_in_B=-16617 parity_A=0 parity_B=0
+12360 DEBUG: get_excepted(-1,9940)
+Test PASSED for data_in_A=-1 data_in_B=9940 parity_A=0 parity_B=0
+12440 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+12520 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+12600 DEBUG: get_excepted(-13508,21848)
+Test FAILED for data_in_A=-13508 data_in_B=21848 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3999844512. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+12680 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=0
+12760 DEBUG: get_excepted(-28168,32767)
+Test PASSED for data_in_A=-28168 data_in_B=32767 parity_A=0 parity_B=0
+12840 DEBUG: get_excepted(-28025,-1)
+Test PASSED for data_in_A=-28025 data_in_B=-1 parity_A=0 parity_B=0
+12920 DEBUG: get_excepted(14385,-1)
+Test PASSED for data_in_A=14385 data_in_B=-1 parity_A=0 parity_B=0
+13000 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+13080 DEBUG: get_excepted(0,-31037)
+Test PASSED for data_in_A=0 data_in_B=-31037 parity_A=0 parity_B=0
+13160 DEBUG: get_excepted(0,9823)
+Test PASSED for data_in_A=0 data_in_B=9823 parity_A=0 parity_B=0
+13240 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+13320 DEBUG: get_excepted(-1,8903)
+Test PASSED for data_in_A=-1 data_in_B=8903 parity_A=0 parity_B=0
+13400 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=1
+13480 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+13560 DEBUG: get_excepted(-7260,1)
+Test FAILED for data_in_A=-7260 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294960036. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+13640 DEBUG: get_excepted(-32768,-3896)
+Test PASSED for data_in_A=-32768 data_in_B=-3896 parity_A=0 parity_B=0
+13720 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+13800 DEBUG: get_excepted(-8907,0)
+Test PASSED for data_in_A=-8907 data_in_B=0 parity_A=0 parity_B=0
+13880 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=1
+13960 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+14040 DEBUG: get_excepted(-5410,-20184)
+Test PASSED for data_in_A=-5410 data_in_B=-20184 parity_A=0 parity_B=0
+14120 DEBUG: get_excepted(1,5076)
+Test FAILED for data_in_A=1 data_in_B=5076 parity_A=0 parity_B=1 
+Expected data:           0  received data:       5076. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+14200 DEBUG: get_excepted(-14321,-4192)
+Test FAILED for data_in_A=-14321 data_in_B=-4192 parity_A=1 parity_B=0 
+Expected data:           0  received data:   60033632. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+14280 DEBUG: get_excepted(1,2885)
+Test PASSED for data_in_A=1 data_in_B=2885 parity_A=0 parity_B=0
+14360 DEBUG: get_excepted(22892,0)
+Test PASSED for data_in_A=22892 data_in_B=0 parity_A=0 parity_B=0
+14440 DEBUG: get_excepted(-32768,11278)
+Test FAILED for data_in_A=-32768 data_in_B=11278 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3925409792. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+14520 DEBUG: get_excepted(29829,-1)
+Test FAILED for data_in_A=29829 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294937467. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+14600 DEBUG: get_excepted(-1,6842)
+Test PASSED for data_in_A=-1 data_in_B=6842 parity_A=0 parity_B=0
+14680 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+14760 DEBUG: get_excepted(32767,-12097)
+Test PASSED for data_in_A=32767 data_in_B=-12097 parity_A=0 parity_B=0
+14840 DEBUG: get_excepted(32767,29524)
+Test PASSED for data_in_A=32767 data_in_B=29524 parity_A=0 parity_B=0
+14920 DEBUG: get_excepted(-20700,91)
+Test PASSED for data_in_A=-20700 data_in_B=91 parity_A=0 parity_B=0
+15000 DEBUG: get_excepted(6897,-20817)
+Test FAILED for data_in_A=6897 data_in_B=-20817 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4151392447. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+15080 DEBUG: get_excepted(-32768,-3900)
+Test FAILED for data_in_A=-32768 data_in_B=-3900 parity_A=0 parity_B=1 
+Expected data:           0  received data:  127795200. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+15160 DEBUG: get_excepted(-25766,0)
+Test PASSED for data_in_A=-25766 data_in_B=0 parity_A=1 parity_B=0
+15240 DEBUG: get_excepted(-17438,-1)
+Test PASSED for data_in_A=-17438 data_in_B=-1 parity_A=0 parity_B=0
+15320 DEBUG: get_excepted(-13552,-1)
+Test PASSED for data_in_A=-13552 data_in_B=-1 parity_A=0 parity_B=0
+15400 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+15480 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+15560 DEBUG: get_excepted(-26316,1)
+Test FAILED for data_in_A=-26316 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294940980. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+15640 DEBUG: get_excepted(-32575,-32768)
+Test PASSED for data_in_A=-32575 data_in_B=-32768 parity_A=0 parity_B=0
+15720 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+15800 DEBUG: get_excepted(0,11794)
+Test PASSED for data_in_A=0 data_in_B=11794 parity_A=0 parity_B=1
+15880 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=1 parity_B=1
+15960 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16040 DEBUG: get_excepted(32767,-2293)
+Test FAILED for data_in_A=32767 data_in_B=-2293 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4219832565. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16120 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16200 DEBUG: get_excepted(-10621,32767)
+Test FAILED for data_in_A=-10621 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3946948989. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16280 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+16360 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+16440 DEBUG: get_excepted(18221,-32768)
+Test PASSED for data_in_A=18221 data_in_B=-32768 parity_A=0 parity_B=0
+16520 DEBUG: get_excepted(-19457,0)
+Test PASSED for data_in_A=-19457 data_in_B=0 parity_A=0 parity_B=0
+16600 DEBUG: get_excepted(-15597,-32768)
+Test FAILED for data_in_A=-15597 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:  511082496. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16680 DEBUG: get_excepted(32767,-1)
+Test FAILED for data_in_A=32767 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16760 DEBUG: get_excepted(9737,-11075)
+Test FAILED for data_in_A=9737 data_in_B=-11075 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4187130021. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+16840 DEBUG: get_excepted(1,-27243)
+Test PASSED for data_in_A=1 data_in_B=-27243 parity_A=0 parity_B=0
+16920 DEBUG: get_excepted(19657,32767)
+Test FAILED for data_in_A=19657 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  644100919. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+17000 DEBUG: get_excepted(1,-7411)
+Test PASSED for data_in_A=1 data_in_B=-7411 parity_A=0 parity_B=0
+17080 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+17160 DEBUG: get_excepted(15050,-17463)
+Test PASSED for data_in_A=15050 data_in_B=-17463 parity_A=0 parity_B=0
+17240 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=1 parity_B=0
+17320 DEBUG: get_excepted(32767,-28831)
+Test PASSED for data_in_A=32767 data_in_B=-28831 parity_A=0 parity_B=0
+17400 DEBUG: get_excepted(-1638,25422)
+Test FAILED for data_in_A=-1638 data_in_B=25422 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4253326060. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+17480 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+17560 DEBUG: get_excepted(98,32767)
+Test FAILED for data_in_A=98 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:    3211166. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+17640 DEBUG: get_excepted(-19286,0)
+Test PASSED for data_in_A=-19286 data_in_B=0 parity_A=0 parity_B=0
+17720 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+17800 DEBUG: get_excepted(-10883,0)
+Test PASSED for data_in_A=-10883 data_in_B=0 parity_A=0 parity_B=0
+17880 DEBUG: get_excepted(11817,-32768)
+Test PASSED for data_in_A=11817 data_in_B=-32768 parity_A=0 parity_B=0
+17960 DEBUG: get_excepted(1,10879)
+Test FAILED for data_in_A=1 data_in_B=10879 parity_A=1 parity_B=0 
+Expected data:           0  received data:      10879. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+18040 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+18120 DEBUG: get_excepted(32254,1)
+Test PASSED for data_in_A=32254 data_in_B=1 parity_A=0 parity_B=0
+18200 DEBUG: get_excepted(32767,21146)
+Test PASSED for data_in_A=32767 data_in_B=21146 parity_A=0 parity_B=0
+18280 DEBUG: get_excepted(31290,0)
+Test PASSED for data_in_A=31290 data_in_B=0 parity_A=0 parity_B=0
+18360 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+18440 DEBUG: get_excepted(16154,0)
+Test PASSED for data_in_A=16154 data_in_B=0 parity_A=0 parity_B=0
+18520 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=0
+18600 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+18680 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+18760 DEBUG: get_excepted(1,1662)
+Test PASSED for data_in_A=1 data_in_B=1662 parity_A=0 parity_B=0
+18840 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+18920 DEBUG: get_excepted(16959,0)
+Test PASSED for data_in_A=16959 data_in_B=0 parity_A=0 parity_B=1
+19000 DEBUG: get_excepted(32767,19870)
+Test PASSED for data_in_A=32767 data_in_B=19870 parity_A=0 parity_B=0
+19080 DEBUG: get_excepted(-1,-14255)
+Test PASSED for data_in_A=-1 data_in_B=-14255 parity_A=0 parity_B=0
+19160 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=0
+19240 DEBUG: get_excepted(21287,-32768)
+Test FAILED for data_in_A=21287 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3597434880. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+19320 DEBUG: get_excepted(-32768,10863)
+Test PASSED for data_in_A=-32768 data_in_B=10863 parity_A=0 parity_B=0
+19400 DEBUG: get_excepted(12146,-1)
+Test FAILED for data_in_A=12146 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294955150. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+19480 DEBUG: get_excepted(30056,32767)
+Test PASSED for data_in_A=30056 data_in_B=32767 parity_A=0 parity_B=0
+19560 DEBUG: get_excepted(32767,-31027)
+Test PASSED for data_in_A=32767 data_in_B=-31027 parity_A=0 parity_B=0
+19640 DEBUG: get_excepted(-1,-3408)
+Test FAILED for data_in_A=-1 data_in_B=-3408 parity_A=0 parity_B=1 
+Expected data:           0  received data:       3408. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+19720 DEBUG: get_excepted(1,-10056)
+Test FAILED for data_in_A=1 data_in_B=-10056 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294957240. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+19800 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+19880 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+19960 DEBUG: get_excepted(32767,10164)
+Test FAILED for data_in_A=32767 data_in_B=10164 parity_A=1 parity_B=0 
+Expected data:           0  received data:  333043788. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+19990 Clock cycles elapsed: 1000
+20040 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=0
+20120 DEBUG: get_excepted(1,9131)
+Test PASSED for data_in_A=1 data_in_B=9131 parity_A=0 parity_B=0
+20200 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+20280 DEBUG: get_excepted(1,806)
+Test PASSED for data_in_A=1 data_in_B=806 parity_A=0 parity_B=0
+20360 DEBUG: get_excepted(-32768,-16976)
+Test PASSED for data_in_A=-32768 data_in_B=-16976 parity_A=0 parity_B=0
+20440 DEBUG: get_excepted(-3210,-16972)
+Test PASSED for data_in_A=-3210 data_in_B=-16972 parity_A=0 parity_B=0
+20520 DEBUG: get_excepted(-27802,-11969)
+Test PASSED for data_in_A=-27802 data_in_B=-11969 parity_A=0 parity_B=0
+20600 DEBUG: get_excepted(-32768,4944)
+Test FAILED for data_in_A=-32768 data_in_B=4944 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4132962304. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+20680 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+20760 DEBUG: get_excepted(-22007,0)
+Test PASSED for data_in_A=-22007 data_in_B=0 parity_A=0 parity_B=1
+20840 DEBUG: get_excepted(0,-6442)
+Test PASSED for data_in_A=0 data_in_B=-6442 parity_A=0 parity_B=0
+20920 DEBUG: get_excepted(-2763,0)
+Test PASSED for data_in_A=-2763 data_in_B=0 parity_A=1 parity_B=0
+21000 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+21080 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+21160 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+21240 DEBUG: get_excepted(0,16948)
+Test PASSED for data_in_A=0 data_in_B=16948 parity_A=0 parity_B=0
+21320 DEBUG: get_excepted(-28644,1)
+Test FAILED for data_in_A=-28644 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294938652. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+21400 DEBUG: get_excepted(-3751,-32768)
+Test FAILED for data_in_A=-3751 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  122912768. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+21480 DEBUG: get_excepted(0,-2460)
+Test PASSED for data_in_A=0 data_in_B=-2460 parity_A=0 parity_B=0
+21560 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+21640 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=0
+21720 DEBUG: get_excepted(23500,5240)
+Test FAILED for data_in_A=23500 data_in_B=5240 parity_A=1 parity_B=0 
+Expected data:           0  received data:  123140000. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+21800 DEBUG: get_excepted(-17034,-3621)
+Test PASSED for data_in_A=-17034 data_in_B=-3621 parity_A=0 parity_B=0
+21880 DEBUG: get_excepted(-32768,32767)
+Test FAILED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+21960 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+22040 DEBUG: get_excepted(0,-7749)
+Test PASSED for data_in_A=0 data_in_B=-7749 parity_A=0 parity_B=1
+22120 DEBUG: get_excepted(-18165,0)
+Test PASSED for data_in_A=-18165 data_in_B=0 parity_A=0 parity_B=0
+22200 DEBUG: get_excepted(3744,-30859)
+Test PASSED for data_in_A=3744 data_in_B=-30859 parity_A=0 parity_B=0
+22280 DEBUG: get_excepted(-26252,-32768)
+Test PASSED for data_in_A=-26252 data_in_B=-32768 parity_A=0 parity_B=0
+22360 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=1 parity_B=0
+22440 DEBUG: get_excepted(32767,6995)
+Test PASSED for data_in_A=32767 data_in_B=6995 parity_A=0 parity_B=0
+22520 DEBUG: get_excepted(32767,-32768)
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+22600 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=1
+22680 DEBUG: get_excepted(-4361,-13763)
+Test FAILED for data_in_A=-4361 data_in_B=-13763 parity_A=0 parity_B=1 
+Expected data:           0  received data:   60020443. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+22760 DEBUG: get_excepted(-32768,-10496)
+Test PASSED for data_in_A=-32768 data_in_B=-10496 parity_A=0 parity_B=0
+22840 DEBUG: get_excepted(32767,29078)
+Test PASSED for data_in_A=32767 data_in_B=29078 parity_A=0 parity_B=0
+22920 DEBUG: get_excepted(74,-1)
+Test PASSED for data_in_A=74 data_in_B=-1 parity_A=0 parity_B=0
+23000 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+23080 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+23160 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+23240 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+23320 DEBUG: get_excepted(0,28624)
+Test PASSED for data_in_A=0 data_in_B=28624 parity_A=1 parity_B=0
+23400 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=1 parity_B=0
+23480 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+23560 DEBUG: get_excepted(0,11256)
+Test PASSED for data_in_A=0 data_in_B=11256 parity_A=0 parity_B=0
+23640 DEBUG: get_excepted(12088,0)
+Test PASSED for data_in_A=12088 data_in_B=0 parity_A=0 parity_B=0
+23720 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+23800 DEBUG: get_excepted(-16850,-32768)
+Test FAILED for data_in_A=-16850 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  552140800. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+23880 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+23960 DEBUG: get_excepted(-2584,0)
+Test PASSED for data_in_A=-2584 data_in_B=0 parity_A=0 parity_B=0
+24040 DEBUG: get_excepted(-3529,-1)
+Test FAILED for data_in_A=-3529 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:       3529. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+24120 DEBUG: get_excepted(32767,-32768)
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+24200 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+24280 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+24360 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+24440 DEBUG: get_excepted(-11990,1)
+Test FAILED for data_in_A=-11990 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294955306. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+24520 DEBUG: get_excepted(-17170,740)
+Test FAILED for data_in_A=-17170 data_in_B=740 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4282261496. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+24600 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+24680 DEBUG: get_excepted(-32768,-16335)
+Test FAILED for data_in_A=-32768 data_in_B=-16335 parity_A=1 parity_B=0 
+Expected data:           0  received data:  535265280. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+24760 DEBUG: get_excepted(-32332,0)
+Test PASSED for data_in_A=-32332 data_in_B=0 parity_A=0 parity_B=0
+24840 DEBUG: get_excepted(-1,-3219)
+Test PASSED for data_in_A=-1 data_in_B=-3219 parity_A=0 parity_B=0
+24920 DEBUG: get_excepted(32539,-29802)
+Test FAILED for data_in_A=32539 data_in_B=-29802 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3325240018. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+25000 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+25080 DEBUG: get_excepted(29571,1)
+Test PASSED for data_in_A=29571 data_in_B=1 parity_A=0 parity_B=0
+25160 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=1
+25240 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+25320 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=0
+25400 DEBUG: get_excepted(-28504,22664)
+Test PASSED for data_in_A=-28504 data_in_B=22664 parity_A=0 parity_B=0
+25480 DEBUG: get_excepted(0,-18581)
+Test PASSED for data_in_A=0 data_in_B=-18581 parity_A=0 parity_B=1
+25560 DEBUG: get_excepted(-23791,10303)
+Test FAILED for data_in_A=-23791 data_in_B=10303 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4049848623. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+25640 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+25720 DEBUG: get_excepted(-1,-22723)
+Test FAILED for data_in_A=-1 data_in_B=-22723 parity_A=0 parity_B=1 
+Expected data:           0  received data:      22723. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+25800 DEBUG: get_excepted(14802,32767)
+Test FAILED for data_in_A=14802 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  485017134. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+25880 DEBUG: get_excepted(1,-29710)
+Test FAILED for data_in_A=1 data_in_B=-29710 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294937586. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+25960 DEBUG: get_excepted(-25874,1)
+Test FAILED for data_in_A=-25874 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294941422. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+26040 DEBUG: get_excepted(-28668,-1)
+Test FAILED for data_in_A=-28668 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      28668. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+26120 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+26200 DEBUG: get_excepted(-32768,19623)
+Test PASSED for data_in_A=-32768 data_in_B=19623 parity_A=0 parity_B=0
+26280 DEBUG: get_excepted(-32768,-9893)
+Test PASSED for data_in_A=-32768 data_in_B=-9893 parity_A=0 parity_B=0
+26360 DEBUG: get_excepted(-22752,21541)
+Test FAILED for data_in_A=-22752 data_in_B=21541 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3804866464. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+26440 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=0
+26520 DEBUG: get_excepted(14300,-32768)
+Test PASSED for data_in_A=14300 data_in_B=-32768 parity_A=0 parity_B=0
+26600 DEBUG: get_excepted(1198,32767)
+Test FAILED for data_in_A=1198 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:   39254866. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+26680 DEBUG: get_excepted(1,-31916)
+Test PASSED for data_in_A=1 data_in_B=-31916 parity_A=0 parity_B=0
+26760 DEBUG: get_excepted(-1,21579)
+Test PASSED for data_in_A=-1 data_in_B=21579 parity_A=0 parity_B=0
+26840 DEBUG: get_excepted(-28202,23269)
+Test FAILED for data_in_A=-28202 data_in_B=23269 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3638734958. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+26920 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+27000 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+27080 DEBUG: get_excepted(32767,31426)
+Test PASSED for data_in_A=32767 data_in_B=31426 parity_A=0 parity_B=0
+27160 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=1
+27240 DEBUG: get_excepted(32767,5133)
+Test PASSED for data_in_A=32767 data_in_B=5133 parity_A=0 parity_B=0
+27320 DEBUG: get_excepted(-1,24404)
+Test FAILED for data_in_A=-1 data_in_B=24404 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294942892. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+27400 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+27480 DEBUG: get_excepted(17458,31547)
+Test FAILED for data_in_A=17458 data_in_B=31547 parity_A=0 parity_B=1 
+Expected data:           0  received data:  550747526. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+27560 DEBUG: get_excepted(-32768,29512)
+Test FAILED for data_in_A=-32768 data_in_B=29512 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3327918080. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+27640 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+27720 DEBUG: get_excepted(32767,-18794)
+Test FAILED for data_in_A=32767 data_in_B=-18794 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3679144298. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+27800 DEBUG: get_excepted(-32768,25168)
+Test PASSED for data_in_A=-32768 data_in_B=25168 parity_A=0 parity_B=0
+27880 DEBUG: get_excepted(12462,0)
+Test PASSED for data_in_A=12462 data_in_B=0 parity_A=1 parity_B=0
+27960 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+28040 DEBUG: get_excepted(-12803,-32768)
+Test PASSED for data_in_A=-12803 data_in_B=-32768 parity_A=0 parity_B=0
+28120 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+28200 DEBUG: get_excepted(32767,24787)
+Test PASSED for data_in_A=32767 data_in_B=24787 parity_A=0 parity_B=0
+28280 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+28360 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+28440 DEBUG: get_excepted(5305,26906)
+Test PASSED for data_in_A=5305 data_in_B=26906 parity_A=0 parity_B=0
+28520 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+28600 DEBUG: get_excepted(3662,0)
+Test PASSED for data_in_A=3662 data_in_B=0 parity_A=0 parity_B=0
+28680 DEBUG: get_excepted(0,-6456)
+Test PASSED for data_in_A=0 data_in_B=-6456 parity_A=0 parity_B=0
+28760 DEBUG: get_excepted(2126,-32768)
+Test FAILED for data_in_A=2126 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4225302528. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+28840 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=1
+28920 DEBUG: get_excepted(17258,-5119)
+Test PASSED for data_in_A=17258 data_in_B=-5119 parity_A=0 parity_B=0
+29000 DEBUG: get_excepted(32767,32767)
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+29080 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=1 parity_B=0
+29160 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+29240 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+29320 DEBUG: get_excepted(0,8551)
+Test PASSED for data_in_A=0 data_in_B=8551 parity_A=1 parity_B=1
+29400 DEBUG: get_excepted(-5332,-32768)
+Test FAILED for data_in_A=-5332 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data:  174718976. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+29480 DEBUG: get_excepted(1,-1986)
+Test FAILED for data_in_A=1 data_in_B=-1986 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294965310. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+29560 DEBUG: get_excepted(-15069,-26596)
+Test FAILED for data_in_A=-15069 data_in_B=-26596 parity_A=1 parity_B=1 
+Expected data:           0  received data:  400775124. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+29640 DEBUG: get_excepted(-1,1)
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+29720 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+29800 DEBUG: get_excepted(-13141,-32768)
+Test PASSED for data_in_A=-13141 data_in_B=-32768 parity_A=0 parity_B=0
+29880 DEBUG: get_excepted(-24785,-21716)
+Test PASSED for data_in_A=-24785 data_in_B=-21716 parity_A=0 parity_B=0
+29960 DEBUG: get_excepted(32767,24145)
+Test PASSED for data_in_A=32767 data_in_B=24145 parity_A=0 parity_B=0
+30040 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+30120 DEBUG: get_excepted(-32768,-160)
+Test FAILED for data_in_A=-32768 data_in_B=-160 parity_A=0 parity_B=1 
+Expected data:           0  received data:    5242880. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+30200 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+30280 DEBUG: get_excepted(22509,-11285)
+Test PASSED for data_in_A=22509 data_in_B=-11285 parity_A=0 parity_B=0
+30360 DEBUG: get_excepted(-24331,19011)
+Test PASSED for data_in_A=-24331 data_in_B=19011 parity_A=0 parity_B=0
+30440 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+30520 DEBUG: get_excepted(32767,-1)
+Test FAILED for data_in_A=32767 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+30600 DEBUG: get_excepted(-32024,1)
+Test FAILED for data_in_A=-32024 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294935272. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+30680 DEBUG: get_excepted(32767,-1)
+Test FAILED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+30760 DEBUG: get_excepted(30376,-1)
+Test FAILED for data_in_A=30376 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294936920. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+30840 DEBUG: get_excepted(-1,29348)
+Test PASSED for data_in_A=-1 data_in_B=29348 parity_A=0 parity_B=0
+30920 DEBUG: get_excepted(3126,32767)
+Test FAILED for data_in_A=3126 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  102429642. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+31000 DEBUG: get_excepted(-10877,32767)
+Test PASSED for data_in_A=-10877 data_in_B=32767 parity_A=0 parity_B=0
+31080 DEBUG: get_excepted(0,-30843)
+Test PASSED for data_in_A=0 data_in_B=-30843 parity_A=0 parity_B=0
+31160 DEBUG: get_excepted(-32768,-32768)
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+31240 DEBUG: get_excepted(-32768,11720)
+Test PASSED for data_in_A=-32768 data_in_B=11720 parity_A=0 parity_B=0
+31320 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+31400 DEBUG: get_excepted(32767,10474)
+Test PASSED for data_in_A=32767 data_in_B=10474 parity_A=0 parity_B=0
+31480 DEBUG: get_excepted(-20267,0)
+Test PASSED for data_in_A=-20267 data_in_B=0 parity_A=1 parity_B=1
+31560 DEBUG: get_excepted(-32768,-32768)
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+31640 DEBUG: get_excepted(13961,32767)
+Test FAILED for data_in_A=13961 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  457460087. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+31720 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+31800 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=1 parity_B=0
+31880 DEBUG: get_excepted(-845,0)
+Test PASSED for data_in_A=-845 data_in_B=0 parity_A=0 parity_B=1
+31960 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+32040 DEBUG: get_excepted(12239,22511)
+Test PASSED for data_in_A=12239 data_in_B=22511 parity_A=0 parity_B=0
+32120 DEBUG: get_excepted(-10942,0)
+Test PASSED for data_in_A=-10942 data_in_B=0 parity_A=0 parity_B=0
+32200 DEBUG: get_excepted(-2572,0)
+Test PASSED for data_in_A=-2572 data_in_B=0 parity_A=0 parity_B=0
+32280 DEBUG: get_excepted(-32768,11090)
+Test FAILED for data_in_A=-32768 data_in_B=11090 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3931570176. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+32360 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+32440 DEBUG: get_excepted(13316,0)
+Test PASSED for data_in_A=13316 data_in_B=0 parity_A=0 parity_B=0
+32520 DEBUG: get_excepted(22113,-6232)
+Test FAILED for data_in_A=22113 data_in_B=-6232 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4157159080. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+32600 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=0
+32680 DEBUG: get_excepted(26381,30443)
+Test PASSED for data_in_A=26381 data_in_B=30443 parity_A=0 parity_B=0
+32760 DEBUG: get_excepted(22117,32767)
+Test FAILED for data_in_A=22117 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  724707739. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+32840 DEBUG: get_excepted(-32768,26940)
+Test FAILED for data_in_A=-32768 data_in_B=26940 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3412197376. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+32920 DEBUG: get_excepted(32767,32767)
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+33000 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+33080 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=1
+33160 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+33240 DEBUG: get_excepted(-5325,0)
+Test PASSED for data_in_A=-5325 data_in_B=0 parity_A=0 parity_B=0
+33320 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=1 parity_B=0
+33400 DEBUG: get_excepted(-1,1)
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+33480 DEBUG: get_excepted(23653,-32768)
+Test PASSED for data_in_A=23653 data_in_B=-32768 parity_A=0 parity_B=0
+33560 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+33640 DEBUG: get_excepted(-15436,-22303)
+Test FAILED for data_in_A=-15436 data_in_B=-22303 parity_A=1 parity_B=0 
+Expected data:           0  received data:  344269108. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+33720 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+33800 DEBUG: get_excepted(-7852,0)
+Test PASSED for data_in_A=-7852 data_in_B=0 parity_A=0 parity_B=1
+33880 DEBUG: get_excepted(-1,-19583)
+Test FAILED for data_in_A=-1 data_in_B=-19583 parity_A=0 parity_B=1 
+Expected data:           0  received data:      19583. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+33960 DEBUG: get_excepted(-1,5947)
+Test PASSED for data_in_A=-1 data_in_B=5947 parity_A=0 parity_B=0
+34040 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+34120 DEBUG: get_excepted(-24406,-11122)
+Test PASSED for data_in_A=-24406 data_in_B=-11122 parity_A=0 parity_B=0
+34200 DEBUG: get_excepted(32767,26162)
+Test PASSED for data_in_A=32767 data_in_B=26162 parity_A=0 parity_B=0
+34280 DEBUG: get_excepted(-25419,0)
+Test PASSED for data_in_A=-25419 data_in_B=0 parity_A=0 parity_B=0
+34360 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+34440 DEBUG: get_excepted(-260,22791)
+Test FAILED for data_in_A=-260 data_in_B=22791 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4289041636. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+34520 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+34600 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=1 parity_B=1
+34680 DEBUG: get_excepted(32767,-4531)
+Test PASSED for data_in_A=32767 data_in_B=-4531 parity_A=0 parity_B=0
+34760 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=1
+34840 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+34920 DEBUG: get_excepted(13959,32767)
+Test PASSED for data_in_A=13959 data_in_B=32767 parity_A=0 parity_B=0
+35000 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=1 parity_B=0
+35080 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+35160 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+35240 DEBUG: get_excepted(-1,-29888)
+Test FAILED for data_in_A=-1 data_in_B=-29888 parity_A=0 parity_B=1 
+Expected data:           0  received data:      29888. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+35320 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+35400 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+35480 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+35560 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+35640 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+35720 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=1 parity_B=1
+35800 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+35880 DEBUG: get_excepted(0,5323)
+Test PASSED for data_in_A=0 data_in_B=5323 parity_A=0 parity_B=0
+35960 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+36040 DEBUG: get_excepted(20618,-32768)
+Test FAILED for data_in_A=20618 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3619356672. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+36120 DEBUG: get_excepted(-1,-10148)
+Test FAILED for data_in_A=-1 data_in_B=-10148 parity_A=1 parity_B=0 
+Expected data:           0  received data:      10148. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+36200 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+36280 DEBUG: get_excepted(-25072,-21288)
+Test FAILED for data_in_A=-25072 data_in_B=-21288 parity_A=1 parity_B=0 
+Expected data:           0  received data:  533732736. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+36360 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+36440 DEBUG: get_excepted(-30018,-10138)
+Test FAILED for data_in_A=-30018 data_in_B=-10138 parity_A=1 parity_B=0 
+Expected data:           0  received data:  304322484. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+36520 DEBUG: get_excepted(0,-23163)
+Test PASSED for data_in_A=0 data_in_B=-23163 parity_A=0 parity_B=0
+36600 DEBUG: get_excepted(0,22845)
+Test PASSED for data_in_A=0 data_in_B=22845 parity_A=0 parity_B=0
+36680 DEBUG: get_excepted(-31063,28715)
+Test FAILED for data_in_A=-31063 data_in_B=28715 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3402993251. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+36760 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+36840 DEBUG: get_excepted(-20261,-32768)
+Test PASSED for data_in_A=-20261 data_in_B=-32768 parity_A=0 parity_B=0
+36920 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+37000 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+37080 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=1
+37160 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=0
+37240 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=1
+37320 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=1
+37400 DEBUG: get_excepted(-24509,0)
+Test PASSED for data_in_A=-24509 data_in_B=0 parity_A=0 parity_B=0
+37480 DEBUG: get_excepted(24240,22108)
+Test FAILED for data_in_A=24240 data_in_B=22108 parity_A=0 parity_B=1 
+Expected data:           0  received data:  535897920. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+37560 DEBUG: get_excepted(-32447,1)
+Test PASSED for data_in_A=-32447 data_in_B=1 parity_A=0 parity_B=0
+37640 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+37720 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+37800 DEBUG: get_excepted(17702,1)
+Test PASSED for data_in_A=17702 data_in_B=1 parity_A=0 parity_B=0
+37880 DEBUG: get_excepted(-17057,-1)
+Test PASSED for data_in_A=-17057 data_in_B=-1 parity_A=0 parity_B=0
+37960 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+38040 DEBUG: get_excepted(-32768,-25100)
+Test PASSED for data_in_A=-32768 data_in_B=-25100 parity_A=0 parity_B=0
+38120 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+38200 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+38280 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+38360 DEBUG: get_excepted(-1,14576)
+Test FAILED for data_in_A=-1 data_in_B=14576 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294952720. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+38440 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+38520 DEBUG: get_excepted(20454,-32768)
+Test FAILED for data_in_A=20454 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3624730624. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+38600 DEBUG: get_excepted(1,-21055)
+Test PASSED for data_in_A=1 data_in_B=-21055 parity_A=0 parity_B=0
+38680 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=1
+38760 DEBUG: get_excepted(-31442,0)
+Test PASSED for data_in_A=-31442 data_in_B=0 parity_A=1 parity_B=0
+38840 DEBUG: get_excepted(13629,-10551)
+Test PASSED for data_in_A=13629 data_in_B=-10551 parity_A=0 parity_B=0
+38920 DEBUG: get_excepted(-1,-18387)
+Test FAILED for data_in_A=-1 data_in_B=-18387 parity_A=0 parity_B=1 
+Expected data:           0  received data:      18387. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39000 DEBUG: get_excepted(-27476,19817)
+Test FAILED for data_in_A=-27476 data_in_B=19817 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3750475404. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39080 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39160 DEBUG: get_excepted(0,9243)
+Test PASSED for data_in_A=0 data_in_B=9243 parity_A=0 parity_B=0
+39240 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+39320 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39400 DEBUG: get_excepted(12127,-32768)
+Test PASSED for data_in_A=12127 data_in_B=-32768 parity_A=0 parity_B=0
+39480 DEBUG: get_excepted(-17376,-32768)
+Test PASSED for data_in_A=-17376 data_in_B=-32768 parity_A=0 parity_B=0
+39560 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39640 DEBUG: get_excepted(-32768,21843)
+Test FAILED for data_in_A=-32768 data_in_B=21843 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3579215872. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39720 DEBUG: get_excepted(-1,-17775)
+Test PASSED for data_in_A=-1 data_in_B=-17775 parity_A=0 parity_B=0
+39800 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+39880 DEBUG: get_excepted(1,11985)
+Test FAILED for data_in_A=1 data_in_B=11985 parity_A=1 parity_B=0 
+Expected data:           0  received data:      11985. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39960 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+39990 Clock cycles elapsed: 2000
+40040 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+40120 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+40200 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+40280 DEBUG: get_excepted(7029,-25324)
+Test FAILED for data_in_A=7029 data_in_B=-25324 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4116964900. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+40360 DEBUG: get_excepted(-3303,1)
+Test FAILED for data_in_A=-3303 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294963993. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+40440 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+40520 DEBUG: get_excepted(-4785,-32768)
+Test PASSED for data_in_A=-4785 data_in_B=-32768 parity_A=0 parity_B=0
+40600 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+40680 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+40760 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=0 parity_B=0
+40840 DEBUG: get_excepted(-13473,1)
+Test PASSED for data_in_A=-13473 data_in_B=1 parity_A=0 parity_B=0
+40920 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=1
+41000 DEBUG: get_excepted(14861,1)
+Test PASSED for data_in_A=14861 data_in_B=1 parity_A=0 parity_B=0
+41080 DEBUG: get_excepted(7899,32767)
+Test FAILED for data_in_A=7899 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  258826533. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+41160 DEBUG: get_excepted(-20157,0)
+Test PASSED for data_in_A=-20157 data_in_B=0 parity_A=0 parity_B=0
+41240 DEBUG: get_excepted(-31698,1)
+Test PASSED for data_in_A=-31698 data_in_B=1 parity_A=0 parity_B=0
+41320 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=1
+41400 DEBUG: get_excepted(0,-8104)
+Test PASSED for data_in_A=0 data_in_B=-8104 parity_A=0 parity_B=0
+41480 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+41560 DEBUG: get_excepted(4931,15803)
+Test PASSED for data_in_A=4931 data_in_B=15803 parity_A=0 parity_B=0
+41640 DEBUG: get_excepted(30188,-32768)
+Test FAILED for data_in_A=30188 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3305766912. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+41720 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+41800 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+41880 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+41960 DEBUG: get_excepted(-14023,32767)
+Test FAILED for data_in_A=-14023 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3835475655. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+42040 DEBUG: get_excepted(7385,1)
+Test PASSED for data_in_A=7385 data_in_B=1 parity_A=0 parity_B=0
+42120 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+42200 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+42280 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+42360 DEBUG: get_excepted(1,-1)
+Test FAILED for data_in_A=1 data_in_B=-1 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+42440 DEBUG: get_excepted(29465,32767)
+Test FAILED for data_in_A=29465 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  965479655. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+42520 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=0
+42600 DEBUG: get_excepted(8531,0)
+Test PASSED for data_in_A=8531 data_in_B=0 parity_A=0 parity_B=1
+42680 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=0 parity_B=1
+42760 DEBUG: get_excepted(-24823,1)
+Test PASSED for data_in_A=-24823 data_in_B=1 parity_A=0 parity_B=0
+42840 DEBUG: get_excepted(1,1)
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+42920 DEBUG: get_excepted(27933,1)
+Test PASSED for data_in_A=27933 data_in_B=1 parity_A=0 parity_B=0
+43000 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+43080 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=0 parity_B=0
+43160 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=1 parity_B=0
+43240 DEBUG: get_excepted(28647,1)
+Test FAILED for data_in_A=28647 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      28647. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+43320 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+43400 DEBUG: get_excepted(32767,29470)
+Test PASSED for data_in_A=32767 data_in_B=29470 parity_A=0 parity_B=0
+43480 DEBUG: get_excepted(1,-20489)
+Test FAILED for data_in_A=1 data_in_B=-20489 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294946807. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+43560 DEBUG: get_excepted(1,-18892)
+Test PASSED for data_in_A=1 data_in_B=-18892 parity_A=0 parity_B=0
+43640 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=0 parity_B=0
+43720 DEBUG: get_excepted(-32768,19944)
+Test FAILED for data_in_A=-32768 data_in_B=19944 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3641442304. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+43800 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+43880 DEBUG: get_excepted(32767,-34)
+Test FAILED for data_in_A=32767 data_in_B=-34 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4293853218. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+43960 DEBUG: get_excepted(13145,0)
+Test PASSED for data_in_A=13145 data_in_B=0 parity_A=0 parity_B=0
+44040 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+44120 DEBUG: get_excepted(-1,24571)
+Test PASSED for data_in_A=-1 data_in_B=24571 parity_A=0 parity_B=0
+44200 DEBUG: get_excepted(13947,0)
+Test PASSED for data_in_A=13947 data_in_B=0 parity_A=0 parity_B=1
+44280 DEBUG: get_excepted(18721,-1)
+Test PASSED for data_in_A=18721 data_in_B=-1 parity_A=0 parity_B=0
+44360 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+44440 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+44520 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+44600 DEBUG: get_excepted(7365,-14630)
+Test PASSED for data_in_A=7365 data_in_B=-14630 parity_A=0 parity_B=0
+44680 DEBUG: get_excepted(-18206,32767)
+Test FAILED for data_in_A=-18206 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3698411294. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+44760 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+44840 DEBUG: get_excepted(0,4411)
+Test PASSED for data_in_A=0 data_in_B=4411 parity_A=0 parity_B=0
+44920 DEBUG: get_excepted(19262,32767)
+Test FAILED for data_in_A=19262 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  631157954. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+45000 DEBUG: get_excepted(-7651,0)
+Test PASSED for data_in_A=-7651 data_in_B=0 parity_A=0 parity_B=0
+45080 DEBUG: get_excepted(4036,4606)
+Test PASSED for data_in_A=4036 data_in_B=4606 parity_A=0 parity_B=0
+45160 DEBUG: get_excepted(-14872,-15536)
+Test PASSED for data_in_A=-14872 data_in_B=-15536 parity_A=0 parity_B=0
+45240 DEBUG: get_excepted(-23368,32767)
+Test FAILED for data_in_A=-23368 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3529268040. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+45320 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+45400 DEBUG: get_excepted(0,3394)
+Test PASSED for data_in_A=0 data_in_B=3394 parity_A=0 parity_B=1
+45480 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+45560 DEBUG: get_excepted(32767,23608)
+Test PASSED for data_in_A=32767 data_in_B=23608 parity_A=0 parity_B=0
+45640 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+45720 DEBUG: get_excepted(24455,0)
+Test PASSED for data_in_A=24455 data_in_B=0 parity_A=1 parity_B=0
+45800 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+45880 DEBUG: get_excepted(1,-7563)
+Test FAILED for data_in_A=1 data_in_B=-7563 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294959733. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+45960 DEBUG: get_excepted(-32768,-74)
+Test PASSED for data_in_A=-32768 data_in_B=-74 parity_A=0 parity_B=0
+46040 DEBUG: get_excepted(0,-25736)
+Test PASSED for data_in_A=0 data_in_B=-25736 parity_A=0 parity_B=0
+46120 DEBUG: get_excepted(-32768,23353)
+Test PASSED for data_in_A=-32768 data_in_B=23353 parity_A=0 parity_B=0
+46200 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=1 parity_B=0
+46280 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=1
+46360 DEBUG: get_excepted(-32768,15355)
+Test FAILED for data_in_A=-32768 data_in_B=15355 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3791814656. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+46440 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+46520 DEBUG: get_excepted(23852,-4606)
+Test FAILED for data_in_A=23852 data_in_B=-4606 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4185104984. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+46600 DEBUG: get_excepted(-1,1)
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+46680 DEBUG: get_excepted(0,-30949)
+Test PASSED for data_in_A=0 data_in_B=-30949 parity_A=0 parity_B=0
+46760 DEBUG: get_excepted(0,-1141)
+Test PASSED for data_in_A=0 data_in_B=-1141 parity_A=0 parity_B=0
+46840 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+46920 DEBUG: get_excepted(0,-32122)
+Test PASSED for data_in_A=0 data_in_B=-32122 parity_A=1 parity_B=0
+47000 DEBUG: get_excepted(1,15755)
+Test FAILED for data_in_A=1 data_in_B=15755 parity_A=1 parity_B=0 
+Expected data:           0  received data:      15755. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47080 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47160 DEBUG: get_excepted(5415,32767)
+Test FAILED for data_in_A=5415 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  177433305. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47240 DEBUG: get_excepted(25790,-15467)
+Test FAILED for data_in_A=25790 data_in_B=-15467 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3896073366. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47320 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+47400 DEBUG: get_excepted(1,-1094)
+Test PASSED for data_in_A=1 data_in_B=-1094 parity_A=0 parity_B=0
+47480 DEBUG: get_excepted(10673,32767)
+Test FAILED for data_in_A=10673 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  349722191. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47560 DEBUG: get_excepted(-1,-15736)
+Test FAILED for data_in_A=-1 data_in_B=-15736 parity_A=1 parity_B=0 
+Expected data:           0  received data:      15736. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47640 DEBUG: get_excepted(32767,14881)
+Test PASSED for data_in_A=32767 data_in_B=14881 parity_A=0 parity_B=0
+47720 DEBUG: get_excepted(-22784,1)
+Test PASSED for data_in_A=-22784 data_in_B=1 parity_A=0 parity_B=0
+47800 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+47880 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+47960 DEBUG: get_excepted(32767,17178)
+Test PASSED for data_in_A=32767 data_in_B=17178 parity_A=0 parity_B=0
+48040 DEBUG: get_excepted(-1328,-32768)
+Test FAILED for data_in_A=-1328 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:   43515904. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+48120 DEBUG: get_excepted(-8622,0)
+Test PASSED for data_in_A=-8622 data_in_B=0 parity_A=0 parity_B=0
+48200 DEBUG: get_excepted(728,1)
+Test PASSED for data_in_A=728 data_in_B=1 parity_A=0 parity_B=0
+48280 DEBUG: get_excepted(6775,-25988)
+Test FAILED for data_in_A=6775 data_in_B=-25988 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4118898596. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+48360 DEBUG: get_excepted(26159,10766)
+Test FAILED for data_in_A=26159 data_in_B=10766 parity_A=0 parity_B=1 
+Expected data:           0  received data:  281627794. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+48440 DEBUG: get_excepted(-23840,-9329)
+Test PASSED for data_in_A=-23840 data_in_B=-9329 parity_A=0 parity_B=0
+48520 DEBUG: get_excepted(-1590,-32768)
+Test PASSED for data_in_A=-1590 data_in_B=-32768 parity_A=0 parity_B=0
+48600 DEBUG: get_excepted(-29842,266)
+Test PASSED for data_in_A=-29842 data_in_B=266 parity_A=0 parity_B=0
+48680 DEBUG: get_excepted(11134,0)
+Test PASSED for data_in_A=11134 data_in_B=0 parity_A=0 parity_B=0
+48760 DEBUG: get_excepted(-28542,-32768)
+Test FAILED for data_in_A=-28542 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  935264256. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+48840 DEBUG: get_excepted(12130,32767)
+Test FAILED for data_in_A=12130 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  397463710. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+48920 DEBUG: get_excepted(-1,20871)
+Test PASSED for data_in_A=-1 data_in_B=20871 parity_A=0 parity_B=0
+49000 DEBUG: get_excepted(1,1)
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+49080 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=0
+49160 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+49240 DEBUG: get_excepted(-7421,-32768)
+Test PASSED for data_in_A=-7421 data_in_B=-32768 parity_A=0 parity_B=0
+49320 DEBUG: get_excepted(-1,30174)
+Test PASSED for data_in_A=-1 data_in_B=30174 parity_A=0 parity_B=0
+49400 DEBUG: get_excepted(-10217,-1)
+Test PASSED for data_in_A=-10217 data_in_B=-1 parity_A=0 parity_B=0
+49480 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+49560 DEBUG: get_excepted(13818,0)
+Test PASSED for data_in_A=13818 data_in_B=0 parity_A=0 parity_B=0
+49640 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+49720 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+49800 DEBUG: get_excepted(-32768,-9356)
+Test PASSED for data_in_A=-32768 data_in_B=-9356 parity_A=0 parity_B=0
+49880 DEBUG: get_excepted(0,6205)
+Test PASSED for data_in_A=0 data_in_B=6205 parity_A=0 parity_B=0
+49960 DEBUG: get_excepted(0,5669)
+Test PASSED for data_in_A=0 data_in_B=5669 parity_A=0 parity_B=1
+50040 DEBUG: get_excepted(-5506,-32768)
+Test PASSED for data_in_A=-5506 data_in_B=-32768 parity_A=0 parity_B=0
+50120 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+50200 DEBUG: get_excepted(17341,0)
+Test PASSED for data_in_A=17341 data_in_B=0 parity_A=0 parity_B=0
+50280 DEBUG: get_excepted(23096,32767)
+Test FAILED for data_in_A=23096 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  756786632. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+50360 DEBUG: get_excepted(32767,32767)
+Test FAILED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 1073676289. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+50440 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=1 parity_B=0
+50520 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+50600 DEBUG: get_excepted(6743,3699)
+Test FAILED for data_in_A=6743 data_in_B=3699 parity_A=0 parity_B=1 
+Expected data:           0  received data:   24942357. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+50680 DEBUG: get_excepted(-15213,-1)
+Test PASSED for data_in_A=-15213 data_in_B=-1 parity_A=0 parity_B=0
+50760 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+50840 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=1
+50920 DEBUG: get_excepted(-1133,1)
+Test PASSED for data_in_A=-1133 data_in_B=1 parity_A=0 parity_B=0
+51000 DEBUG: get_excepted(1,11181)
+Test PASSED for data_in_A=1 data_in_B=11181 parity_A=0 parity_B=0
+51080 DEBUG: get_excepted(-6683,-13100)
+Test FAILED for data_in_A=-6683 data_in_B=-13100 parity_A=0 parity_B=1 
+Expected data:           0  received data:   87547300. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+51160 DEBUG: get_excepted(1,30637)
+Test FAILED for data_in_A=1 data_in_B=30637 parity_A=1 parity_B=0 
+Expected data:           0  received data:      30637. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+51240 DEBUG: get_excepted(1898,-1)
+Test PASSED for data_in_A=1898 data_in_B=-1 parity_A=0 parity_B=0
+51320 DEBUG: get_excepted(15400,-32768)
+Test PASSED for data_in_A=15400 data_in_B=-32768 parity_A=0 parity_B=0
+51400 DEBUG: get_excepted(-24286,32767)
+Test PASSED for data_in_A=-24286 data_in_B=32767 parity_A=0 parity_B=0
+51480 DEBUG: get_excepted(28547,1)
+Test FAILED for data_in_A=28547 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      28547. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+51560 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+51640 DEBUG: get_excepted(-5227,-210)
+Test FAILED for data_in_A=-5227 data_in_B=-210 parity_A=1 parity_B=0 
+Expected data:           0  received data:    1097670. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+51720 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+51800 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+51880 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+51960 DEBUG: get_excepted(-32768,-9540)
+Test FAILED for data_in_A=-32768 data_in_B=-9540 parity_A=1 parity_B=1 
+Expected data:           0  received data:  312606720. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+52040 DEBUG: get_excepted(1465,-1)
+Test FAILED for data_in_A=1465 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294965831. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+52120 DEBUG: get_excepted(-593,-32768)
+Test PASSED for data_in_A=-593 data_in_B=-32768 parity_A=0 parity_B=0
+52200 DEBUG: get_excepted(32767,-878)
+Test PASSED for data_in_A=32767 data_in_B=-878 parity_A=0 parity_B=0
+52280 DEBUG: get_excepted(-6448,-32768)
+Test PASSED for data_in_A=-6448 data_in_B=-32768 parity_A=0 parity_B=0
+52360 DEBUG: get_excepted(32613,-1)
+Test FAILED for data_in_A=32613 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934683. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+52440 DEBUG: get_excepted(1218,-24808)
+Test FAILED for data_in_A=1218 data_in_B=-24808 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4264751152. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+52520 DEBUG: get_excepted(-9654,8092)
+Test FAILED for data_in_A=-9654 data_in_B=8092 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4216847128. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+52600 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+52680 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+52760 DEBUG: get_excepted(-5936,-32768)
+Test FAILED for data_in_A=-5936 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:  194510848. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+52840 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+52920 DEBUG: get_excepted(-7306,32767)
+Test PASSED for data_in_A=-7306 data_in_B=32767 parity_A=0 parity_B=0
+53000 DEBUG: get_excepted(-32768,31502)
+Test PASSED for data_in_A=-32768 data_in_B=31502 parity_A=0 parity_B=0
+53080 DEBUG: get_excepted(424,32767)
+Test PASSED for data_in_A=424 data_in_B=32767 parity_A=0 parity_B=0
+53160 DEBUG: get_excepted(-16020,1)
+Test FAILED for data_in_A=-16020 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294951276. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+53240 DEBUG: get_excepted(18004,22923)
+Test FAILED for data_in_A=18004 data_in_B=22923 parity_A=1 parity_B=0 
+Expected data:           0  received data:  412705692. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+53320 DEBUG: get_excepted(-27205,32767)
+Test PASSED for data_in_A=-27205 data_in_B=32767 parity_A=0 parity_B=0
+53400 DEBUG: get_excepted(-3909,31756)
+Test FAILED for data_in_A=-3909 data_in_B=31756 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4170833092. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+53480 DEBUG: get_excepted(24313,-23114)
+Test PASSED for data_in_A=24313 data_in_B=-23114 parity_A=0 parity_B=0
+53560 DEBUG: get_excepted(-10569,0)
+Test PASSED for data_in_A=-10569 data_in_B=0 parity_A=0 parity_B=0
+53640 DEBUG: get_excepted(-29022,21819)
+Test PASSED for data_in_A=-29022 data_in_B=21819 parity_A=0 parity_B=0
+53720 DEBUG: get_excepted(-30540,32767)
+Test FAILED for data_in_A=-30540 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3294263116. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+53800 DEBUG: get_excepted(32767,20784)
+Test FAILED for data_in_A=32767 data_in_B=20784 parity_A=0 parity_B=1 
+Expected data:           0  received data:  681029328. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+53880 DEBUG: get_excepted(-32411,-24228)
+Test FAILED for data_in_A=-32411 data_in_B=-24228 parity_A=1 parity_B=0 
+Expected data:           0  received data:  785253708. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+53960 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+54040 DEBUG: get_excepted(-17406,1)
+Test PASSED for data_in_A=-17406 data_in_B=1 parity_A=0 parity_B=0
+54120 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+54200 DEBUG: get_excepted(-16986,0)
+Test PASSED for data_in_A=-16986 data_in_B=0 parity_A=0 parity_B=0
+54280 DEBUG: get_excepted(-22753,16718)
+Test PASSED for data_in_A=-22753 data_in_B=16718 parity_A=0 parity_B=0
+54360 DEBUG: get_excepted(1,-23406)
+Test PASSED for data_in_A=1 data_in_B=-23406 parity_A=0 parity_B=0
+54440 DEBUG: get_excepted(-32768,26754)
+Test FAILED for data_in_A=-32768 data_in_B=26754 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3418292224. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+54520 DEBUG: get_excepted(7862,1023)
+Test PASSED for data_in_A=7862 data_in_B=1023 parity_A=0 parity_B=0
+54600 DEBUG: get_excepted(32767,-11812)
+Test PASSED for data_in_A=32767 data_in_B=-11812 parity_A=0 parity_B=0
+54680 DEBUG: get_excepted(-8798,19040)
+Test FAILED for data_in_A=-8798 data_in_B=19040 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4127453376. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+54760 DEBUG: get_excepted(12679,3383)
+Test FAILED for data_in_A=12679 data_in_B=3383 parity_A=1 parity_B=0 
+Expected data:           0  received data:   42893057. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+54840 DEBUG: get_excepted(-14761,-20006)
+Test FAILED for data_in_A=-14761 data_in_B=-20006 parity_A=1 parity_B=0 
+Expected data:           0  received data:  295308566. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+54920 DEBUG: get_excepted(32767,-1234)
+Test FAILED for data_in_A=32767 data_in_B=-1234 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4254532818. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55000 DEBUG: get_excepted(14494,-3646)
+Test FAILED for data_in_A=14494 data_in_B=-3646 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4242122172. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55080 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55160 DEBUG: get_excepted(-25885,-18393)
+Test FAILED for data_in_A=-25885 data_in_B=-18393 parity_A=1 parity_B=0 
+Expected data:           0  received data:  476102805. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55240 DEBUG: get_excepted(32767,-22227)
+Test PASSED for data_in_A=32767 data_in_B=-22227 parity_A=0 parity_B=0
+55320 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=1 parity_B=0
+55400 DEBUG: get_excepted(-22760,1)
+Test FAILED for data_in_A=-22760 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294944536. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55480 DEBUG: get_excepted(-1,1)
+Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55560 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=1
+55640 DEBUG: get_excepted(0,-9129)
+Test PASSED for data_in_A=0 data_in_B=-9129 parity_A=1 parity_B=0
+55720 DEBUG: get_excepted(0,-22515)
+Test PASSED for data_in_A=0 data_in_B=-22515 parity_A=0 parity_B=1
+55800 DEBUG: get_excepted(32767,29942)
+Test FAILED for data_in_A=32767 data_in_B=29942 parity_A=1 parity_B=0 
+Expected data:           0  received data:  981109514. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+55880 DEBUG: get_excepted(-25293,17912)
+Test PASSED for data_in_A=-25293 data_in_B=17912 parity_A=0 parity_B=0
+55960 DEBUG: get_excepted(1,-9541)
+Test PASSED for data_in_A=1 data_in_B=-9541 parity_A=0 parity_B=0
+56040 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+56120 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+56200 DEBUG: get_excepted(32767,-32768)
+Test FAILED for data_in_A=32767 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56280 DEBUG: get_excepted(-30688,32767)
+Test FAILED for data_in_A=-30688 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3289413600. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56360 DEBUG: get_excepted(32767,-13255)
+Test PASSED for data_in_A=32767 data_in_B=-13255 parity_A=0 parity_B=0
+56440 DEBUG: get_excepted(1,5188)
+Test FAILED for data_in_A=1 data_in_B=5188 parity_A=0 parity_B=1 
+Expected data:           0  received data:       5188. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56520 DEBUG: get_excepted(1,-19837)
+Test FAILED for data_in_A=1 data_in_B=-19837 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294947459. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56600 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+56680 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56760 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56840 DEBUG: get_excepted(1,23746)
+Test FAILED for data_in_A=1 data_in_B=23746 parity_A=1 parity_B=1 
+Expected data:           0  received data:      23746. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+56920 DEBUG: get_excepted(-32768,14108)
+Test FAILED for data_in_A=-32768 data_in_B=14108 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3832676352. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+57000 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+57080 DEBUG: get_excepted(1,1)
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+57160 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+57240 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+57320 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=1 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+57400 DEBUG: get_excepted(1,-32768)
+Test PASSED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=0
+57480 DEBUG: get_excepted(-2044,0)
+Test PASSED for data_in_A=-2044 data_in_B=0 parity_A=0 parity_B=0
+57560 DEBUG: get_excepted(1,9645)
+Test PASSED for data_in_A=1 data_in_B=9645 parity_A=0 parity_B=0
+57640 DEBUG: get_excepted(-10977,0)
+Test PASSED for data_in_A=-10977 data_in_B=0 parity_A=0 parity_B=1
+57720 DEBUG: get_excepted(22224,-32768)
+Test PASSED for data_in_A=22224 data_in_B=-32768 parity_A=0 parity_B=0
+57800 DEBUG: get_excepted(-6861,-32768)
+Test FAILED for data_in_A=-6861 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  224821248. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+57880 DEBUG: get_excepted(-7341,-28787)
+Test PASSED for data_in_A=-7341 data_in_B=-28787 parity_A=0 parity_B=0
+57960 DEBUG: get_excepted(1,25439)
+Test PASSED for data_in_A=1 data_in_B=25439 parity_A=0 parity_B=0
+58040 DEBUG: get_excepted(32767,3748)
+Test PASSED for data_in_A=32767 data_in_B=3748 parity_A=0 parity_B=0
+58120 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+58200 DEBUG: get_excepted(16393,-1)
+Test PASSED for data_in_A=16393 data_in_B=-1 parity_A=0 parity_B=0
+58280 DEBUG: get_excepted(10989,26403)
+Test FAILED for data_in_A=10989 data_in_B=26403 parity_A=0 parity_B=1 
+Expected data:           0  received data:  290142567. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+58360 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=1
+58440 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+58520 DEBUG: get_excepted(32767,18365)
+Test FAILED for data_in_A=32767 data_in_B=18365 parity_A=1 parity_B=0 
+Expected data:           0  received data:  601765955. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+58600 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=1 parity_B=0
+58680 DEBUG: get_excepted(-1,31171)
+Test FAILED for data_in_A=-1 data_in_B=31171 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294936125. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+58760 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+58840 DEBUG: get_excepted(-32768,32767)
+Test FAILED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+58920 DEBUG: get_excepted(-32768,1)
+Test PASSED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=0
+59000 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+59080 DEBUG: get_excepted(-2118,1)
+Test PASSED for data_in_A=-2118 data_in_B=1 parity_A=0 parity_B=0
+59160 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=1
+59240 DEBUG: get_excepted(-25941,31797)
+Test FAILED for data_in_A=-25941 data_in_B=31797 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3470121319. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+59320 DEBUG: get_excepted(8026,1)
+Test PASSED for data_in_A=8026 data_in_B=1 parity_A=0 parity_B=0
+59400 DEBUG: get_excepted(0,-18339)
+Test PASSED for data_in_A=0 data_in_B=-18339 parity_A=0 parity_B=0
+59480 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=1
+59560 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+59640 DEBUG: get_excepted(1,17017)
+Test PASSED for data_in_A=1 data_in_B=17017 parity_A=0 parity_B=0
+59720 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+59800 DEBUG: get_excepted(10923,-32768)
+Test FAILED for data_in_A=10923 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3937042432. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+59880 DEBUG: get_excepted(-1,-32768)
+Test PASSED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=0
+59960 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=0
+59990 Clock cycles elapsed: 3000
+60040 DEBUG: get_excepted(32767,19729)
+Test FAILED for data_in_A=32767 data_in_B=19729 parity_A=1 parity_B=1 
+Expected data:           0  received data:  646460143. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+60120 DEBUG: get_excepted(1,29143)
+Test PASSED for data_in_A=1 data_in_B=29143 parity_A=0 parity_B=0
+60200 DEBUG: get_excepted(0,28564)
+Test PASSED for data_in_A=0 data_in_B=28564 parity_A=0 parity_B=1
+60280 DEBUG: get_excepted(1,-9348)
+Test FAILED for data_in_A=1 data_in_B=-9348 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294957948. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+60360 DEBUG: get_excepted(3667,-15859)
+Test FAILED for data_in_A=3667 data_in_B=-15859 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4236812343. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+60440 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+60520 DEBUG: get_excepted(20878,32767)
+Test FAILED for data_in_A=20878 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  684109426. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+60600 DEBUG: get_excepted(-7837,-32768)
+Test FAILED for data_in_A=-7837 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  256802816. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+60680 DEBUG: get_excepted(29679,0)
+Test PASSED for data_in_A=29679 data_in_B=0 parity_A=0 parity_B=0
+60760 DEBUG: get_excepted(2323,-1)
+Test PASSED for data_in_A=2323 data_in_B=-1 parity_A=0 parity_B=0
+60840 DEBUG: get_excepted(-1,10457)
+Test FAILED for data_in_A=-1 data_in_B=10457 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294956839. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+60920 DEBUG: get_excepted(-1,-1)
+Test FAILED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+61000 DEBUG: get_excepted(8269,-32768)
+Test PASSED for data_in_A=8269 data_in_B=-32768 parity_A=0 parity_B=0
+61080 DEBUG: get_excepted(32524,-4631)
+Test PASSED for data_in_A=32524 data_in_B=-4631 parity_A=0 parity_B=0
+61160 DEBUG: get_excepted(385,0)
+Test PASSED for data_in_A=385 data_in_B=0 parity_A=0 parity_B=0
+61240 DEBUG: get_excepted(5340,1126)
+Test PASSED for data_in_A=5340 data_in_B=1126 parity_A=0 parity_B=0
+61320 DEBUG: get_excepted(1,1239)
+Test PASSED for data_in_A=1 data_in_B=1239 parity_A=0 parity_B=0
+61400 DEBUG: get_excepted(-32768,32767)
+Test PASSED for data_in_A=-32768 data_in_B=32767 parity_A=0 parity_B=0
+61480 DEBUG: get_excepted(-4977,32767)
+Test PASSED for data_in_A=-4977 data_in_B=32767 parity_A=0 parity_B=0
+61560 DEBUG: get_excepted(-26091,-32768)
+Test FAILED for data_in_A=-26091 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  854949888. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+61640 DEBUG: get_excepted(-6791,0)
+Test PASSED for data_in_A=-6791 data_in_B=0 parity_A=0 parity_B=0
+61720 DEBUG: get_excepted(1,21730)
+Test PASSED for data_in_A=1 data_in_B=21730 parity_A=0 parity_B=0
+61800 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=1 parity_B=1
+61880 DEBUG: get_excepted(1,-6288)
+Test PASSED for data_in_A=1 data_in_B=-6288 parity_A=0 parity_B=0
+61960 DEBUG: get_excepted(32711,-20321)
+Test FAILED for data_in_A=32711 data_in_B=-20321 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3630247065. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+62040 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=1
+62120 DEBUG: get_excepted(31892,-1)
+Test PASSED for data_in_A=31892 data_in_B=-1 parity_A=0 parity_B=0
+62200 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=1
+62280 DEBUG: get_excepted(3071,3288)
+Test FAILED for data_in_A=3071 data_in_B=3288 parity_A=1 parity_B=0 
+Expected data:           0  received data:   10097448. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+62360 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+62440 DEBUG: get_excepted(1,-16588)
+Test FAILED for data_in_A=1 data_in_B=-16588 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294950708. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+62520 DEBUG: get_excepted(0,22759)
+Test PASSED for data_in_A=0 data_in_B=22759 parity_A=0 parity_B=1
+62600 DEBUG: get_excepted(-15610,32767)
+Test FAILED for data_in_A=-15610 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3783474426. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+62680 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+62760 DEBUG: get_excepted(-8597,-32768)
+Test PASSED for data_in_A=-8597 data_in_B=-32768 parity_A=0 parity_B=0
+62840 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=0
+62920 DEBUG: get_excepted(0,-29208)
+Test PASSED for data_in_A=0 data_in_B=-29208 parity_A=0 parity_B=0
+63000 DEBUG: get_excepted(-30307,14212)
+Test PASSED for data_in_A=-30307 data_in_B=14212 parity_A=0 parity_B=0
+63080 DEBUG: get_excepted(-13106,1)
+Test PASSED for data_in_A=-13106 data_in_B=1 parity_A=0 parity_B=0
+63160 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=1 parity_B=1
+63240 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+63320 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+63400 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=1
+63480 DEBUG: get_excepted(0,-10046)
+Test PASSED for data_in_A=0 data_in_B=-10046 parity_A=0 parity_B=0
+63560 DEBUG: get_excepted(17336,0)
+Test PASSED for data_in_A=17336 data_in_B=0 parity_A=0 parity_B=0
+63640 DEBUG: get_excepted(-31544,-32768)
+Test PASSED for data_in_A=-31544 data_in_B=-32768 parity_A=0 parity_B=0
+63720 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+63800 DEBUG: get_excepted(2368,-1)
+Test FAILED for data_in_A=2368 data_in_B=-1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294964928. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+63880 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+63960 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+64040 DEBUG: get_excepted(-1,4971)
+Test FAILED for data_in_A=-1 data_in_B=4971 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294962325. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+64120 DEBUG: get_excepted(-4627,1)
+Test PASSED for data_in_A=-4627 data_in_B=1 parity_A=0 parity_B=0
+64200 DEBUG: get_excepted(25839,32767)
+Test FAILED for data_in_A=25839 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data:  846666513. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+64280 DEBUG: get_excepted(-32768,549)
+Test PASSED for data_in_A=-32768 data_in_B=549 parity_A=0 parity_B=0
+64360 DEBUG: get_excepted(1,32767)
+Test PASSED for data_in_A=1 data_in_B=32767 parity_A=0 parity_B=0
+64440 DEBUG: get_excepted(-20954,32767)
+Test FAILED for data_in_A=-20954 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3608367578. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+64520 DEBUG: get_excepted(-22184,-7264)
+Test FAILED for data_in_A=-22184 data_in_B=-7264 parity_A=1 parity_B=1 
+Expected data:           0  received data:  161144576. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+64600 DEBUG: get_excepted(-1,-9332)
+Test PASSED for data_in_A=-1 data_in_B=-9332 parity_A=0 parity_B=0
+64680 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+64760 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+64840 DEBUG: get_excepted(0,-1)
+Test PASSED for data_in_A=0 data_in_B=-1 parity_A=0 parity_B=0
+64920 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+65000 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+65080 DEBUG: get_excepted(0,14177)
+Test PASSED for data_in_A=0 data_in_B=14177 parity_A=1 parity_B=0
+65160 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=0
+65240 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+65320 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+65400 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+65480 DEBUG: get_excepted(-7653,0)
+Test PASSED for data_in_A=-7653 data_in_B=0 parity_A=0 parity_B=0
+65560 DEBUG: get_excepted(-14868,1)
+Test PASSED for data_in_A=-14868 data_in_B=1 parity_A=0 parity_B=0
+65640 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+65720 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+65800 DEBUG: get_excepted(0,11750)
+Test PASSED for data_in_A=0 data_in_B=11750 parity_A=0 parity_B=0
+65880 DEBUG: get_excepted(-32768,32767)
+Test FAILED for data_in_A=-32768 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3221258240. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+65960 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+66040 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+66120 DEBUG: get_excepted(1,-7901)
+Test FAILED for data_in_A=1 data_in_B=-7901 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294959395. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+66200 DEBUG: get_excepted(-27143,0)
+Test PASSED for data_in_A=-27143 data_in_B=0 parity_A=1 parity_B=0
+66280 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=1 parity_B=0
+66360 DEBUG: get_excepted(1,24467)
+Test PASSED for data_in_A=1 data_in_B=24467 parity_A=0 parity_B=0
+66440 DEBUG: get_excepted(-32768,0)
+Test PASSED for data_in_A=-32768 data_in_B=0 parity_A=0 parity_B=1
+66520 DEBUG: get_excepted(32767,26367)
+Test FAILED for data_in_A=32767 data_in_B=26367 parity_A=1 parity_B=0 
+Expected data:           0  received data:  863967489. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+66600 DEBUG: get_excepted(28734,1)
+Test FAILED for data_in_A=28734 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      28734. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+66680 DEBUG: get_excepted(-32768,5183)
+Test PASSED for data_in_A=-32768 data_in_B=5183 parity_A=0 parity_B=0
+66760 DEBUG: get_excepted(32589,-1)
+Test PASSED for data_in_A=32589 data_in_B=-1 parity_A=0 parity_B=0
+66840 DEBUG: get_excepted(26276,32767)
+Test FAILED for data_in_A=26276 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:  860985692. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+66920 DEBUG: get_excepted(16553,-32768)
+Test PASSED for data_in_A=16553 data_in_B=-32768 parity_A=0 parity_B=0
+67000 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+67080 DEBUG: get_excepted(2230,0)
+Test PASSED for data_in_A=2230 data_in_B=0 parity_A=1 parity_B=0
+67160 DEBUG: get_excepted(-32768,-3434)
+Test FAILED for data_in_A=-32768 data_in_B=-3434 parity_A=1 parity_B=0 
+Expected data:           0  received data:  112525312. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+67240 DEBUG: get_excepted(-31163,0)
+Test PASSED for data_in_A=-31163 data_in_B=0 parity_A=1 parity_B=0
+67320 DEBUG: get_excepted(-32768,-12475)
+Test PASSED for data_in_A=-32768 data_in_B=-12475 parity_A=0 parity_B=0
+67400 DEBUG: get_excepted(10859,-32768)
+Test FAILED for data_in_A=10859 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3939139584. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+67480 DEBUG: get_excepted(4472,-1)
+Test FAILED for data_in_A=4472 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294962824. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+67560 DEBUG: get_excepted(8942,-12653)
+Test FAILED for data_in_A=8942 data_in_B=-12653 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4181824170. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+67640 DEBUG: get_excepted(-28011,1)
+Test PASSED for data_in_A=-28011 data_in_B=1 parity_A=0 parity_B=0
+67720 DEBUG: get_excepted(10143,32767)
+Test PASSED for data_in_A=10143 data_in_B=32767 parity_A=0 parity_B=0
+67800 DEBUG: get_excepted(-18505,0)
+Test PASSED for data_in_A=-18505 data_in_B=0 parity_A=0 parity_B=0
+67880 DEBUG: get_excepted(-13744,32767)
+Test PASSED for data_in_A=-13744 data_in_B=32767 parity_A=0 parity_B=0
+67960 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+68040 DEBUG: get_excepted(-32768,-1)
+Test FAILED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+68120 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+68200 DEBUG: get_excepted(22213,-16214)
+Test FAILED for data_in_A=22213 data_in_B=-16214 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3934805714. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+68280 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+68360 DEBUG: get_excepted(-1,30669)
+Test PASSED for data_in_A=-1 data_in_B=30669 parity_A=0 parity_B=0
+68440 DEBUG: get_excepted(-26918,4646)
+Test PASSED for data_in_A=-26918 data_in_B=4646 parity_A=0 parity_B=0
+68520 DEBUG: get_excepted(-20106,-29311)
+Test PASSED for data_in_A=-20106 data_in_B=-29311 parity_A=0 parity_B=0
+68600 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=0
+68680 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=1 parity_B=0
+68760 DEBUG: get_excepted(-363,-32768)
+Test PASSED for data_in_A=-363 data_in_B=-32768 parity_A=0 parity_B=0
+68840 DEBUG: get_excepted(1,14464)
+Test PASSED for data_in_A=1 data_in_B=14464 parity_A=0 parity_B=0
+68920 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+69000 DEBUG: get_excepted(1,-8008)
+Test FAILED for data_in_A=1 data_in_B=-8008 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294959288. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+69080 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=1
+69160 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=0 parity_B=1
+69240 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+69320 DEBUG: get_excepted(20126,-32768)
+Test PASSED for data_in_A=20126 data_in_B=-32768 parity_A=0 parity_B=0
+69400 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+69480 DEBUG: get_excepted(-27680,23053)
+Test PASSED for data_in_A=-27680 data_in_B=23053 parity_A=0 parity_B=0
+69560 DEBUG: get_excepted(17946,-2260)
+Test FAILED for data_in_A=17946 data_in_B=-2260 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4254409336. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+69640 DEBUG: get_excepted(-30202,25813)
+Test FAILED for data_in_A=-30202 data_in_B=25813 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3515363070. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+69720 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+69800 DEBUG: get_excepted(-32768,15423)
+Test FAILED for data_in_A=-32768 data_in_B=15423 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3789586432. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+69880 DEBUG: get_excepted(-32768,-26537)
+Test FAILED for data_in_A=-32768 data_in_B=-26537 parity_A=0 parity_B=1 
+Expected data:           0  received data:  869564416. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+69960 DEBUG: get_excepted(-22965,2020)
+Test FAILED for data_in_A=-22965 data_in_B=2020 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4248577996. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+70040 DEBUG: get_excepted(-21714,-1)
+Test PASSED for data_in_A=-21714 data_in_B=-1 parity_A=0 parity_B=0
+70120 DEBUG: get_excepted(-26741,1)
+Test FAILED for data_in_A=-26741 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294940555. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+70200 DEBUG: get_excepted(1,-16944)
+Test PASSED for data_in_A=1 data_in_B=-16944 parity_A=0 parity_B=0
+70280 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+70360 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=0
+70440 DEBUG: get_excepted(21973,1)
+Test PASSED for data_in_A=21973 data_in_B=1 parity_A=0 parity_B=0
+70520 DEBUG: get_excepted(-1,-23250)
+Test PASSED for data_in_A=-1 data_in_B=-23250 parity_A=0 parity_B=0
+70600 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+70680 DEBUG: get_excepted(1,32767)
+Test FAILED for data_in_A=1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+70760 DEBUG: get_excepted(32767,4404)
+Test PASSED for data_in_A=32767 data_in_B=4404 parity_A=0 parity_B=0
+70840 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+70920 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=0
+71000 DEBUG: get_excepted(1648,-3978)
+Test FAILED for data_in_A=1648 data_in_B=-3978 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4288411552. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+71080 DEBUG: get_excepted(1,-1)
+Test FAILED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294967295. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+71160 DEBUG: get_excepted(-433,0)
+Test PASSED for data_in_A=-433 data_in_B=0 parity_A=1 parity_B=0
+71240 DEBUG: get_excepted(1,1)
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+71320 DEBUG: get_excepted(0,-8222)
+Test PASSED for data_in_A=0 data_in_B=-8222 parity_A=0 parity_B=0
+71400 DEBUG: get_excepted(24074,-32768)
+Test FAILED for data_in_A=24074 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3506110464. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+71480 DEBUG: get_excepted(-1,0)
+Test PASSED for data_in_A=-1 data_in_B=0 parity_A=0 parity_B=0
+71560 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+71640 DEBUG: get_excepted(0,11366)
+Test PASSED for data_in_A=0 data_in_B=11366 parity_A=0 parity_B=0
+71720 DEBUG: get_excepted(1,21446)
+Test PASSED for data_in_A=1 data_in_B=21446 parity_A=0 parity_B=0
+71800 DEBUG: get_excepted(-1,-13896)
+Test FAILED for data_in_A=-1 data_in_B=-13896 parity_A=0 parity_B=1 
+Expected data:           0  received data:      13896. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+71880 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+71960 DEBUG: get_excepted(8712,7335)
+Test FAILED for data_in_A=8712 data_in_B=7335 parity_A=1 parity_B=1 
+Expected data:           0  received data:   63902520. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+72040 DEBUG: get_excepted(1,-1347)
+Test PASSED for data_in_A=1 data_in_B=-1347 parity_A=0 parity_B=0
+72120 DEBUG: get_excepted(-1,-8707)
+Test FAILED for data_in_A=-1 data_in_B=-8707 parity_A=0 parity_B=1 
+Expected data:           0  received data:       8707. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+72200 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+72280 DEBUG: get_excepted(1,24720)
+Test PASSED for data_in_A=1 data_in_B=24720 parity_A=0 parity_B=0
+72360 DEBUG: get_excepted(-2182,0)
+Test PASSED for data_in_A=-2182 data_in_B=0 parity_A=1 parity_B=0
+72440 DEBUG: get_excepted(25013,1)
+Test FAILED for data_in_A=25013 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      25013. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+72520 DEBUG: get_excepted(32767,16573)
+Test PASSED for data_in_A=32767 data_in_B=16573 parity_A=0 parity_B=0
+72600 DEBUG: get_excepted(22072,13594)
+Test PASSED for data_in_A=22072 data_in_B=13594 parity_A=0 parity_B=0
+72680 DEBUG: get_excepted(13347,32767)
+Test FAILED for data_in_A=13347 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  437341149. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+72760 DEBUG: get_excepted(32767,1)
+Test FAILED for data_in_A=32767 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data:      32767. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+72840 DEBUG: get_excepted(32485,0)
+Test PASSED for data_in_A=32485 data_in_B=0 parity_A=1 parity_B=0
+72920 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+73000 DEBUG: get_excepted(-18135,-32768)
+Test FAILED for data_in_A=-18135 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  594247680. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+73080 DEBUG: get_excepted(32767,-17420)
+Test PASSED for data_in_A=32767 data_in_B=-17420 parity_A=0 parity_B=0
+73160 DEBUG: get_excepted(0,-19831)
+Test PASSED for data_in_A=0 data_in_B=-19831 parity_A=1 parity_B=0
+73240 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+73320 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=1 parity_B=0
+73400 DEBUG: get_excepted(26014,-1)
+Test PASSED for data_in_A=26014 data_in_B=-1 parity_A=0 parity_B=0
+73480 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+73560 DEBUG: get_excepted(-29297,-32768)
+Test FAILED for data_in_A=-29297 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data:  960004096. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+73640 DEBUG: get_excepted(32767,27153)
+Test PASSED for data_in_A=32767 data_in_B=27153 parity_A=0 parity_B=0
+73720 DEBUG: get_excepted(32767,-12713)
+Test FAILED for data_in_A=32767 data_in_B=-12713 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3878400425. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+73800 DEBUG: get_excepted(32767,1)
+Test PASSED for data_in_A=32767 data_in_B=1 parity_A=0 parity_B=0
+73880 DEBUG: get_excepted(-32768,16524)
+Test PASSED for data_in_A=-32768 data_in_B=16524 parity_A=0 parity_B=0
+73960 DEBUG: get_excepted(1765,-1)
+Test PASSED for data_in_A=1765 data_in_B=-1 parity_A=0 parity_B=0
+74040 DEBUG: get_excepted(0,4086)
+Test PASSED for data_in_A=0 data_in_B=4086 parity_A=0 parity_B=0
+74120 DEBUG: get_excepted(-32768,-32768)
+Test FAILED for data_in_A=-32768 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 1073741824. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+74200 DEBUG: get_excepted(19265,1)
+Test PASSED for data_in_A=19265 data_in_B=1 parity_A=0 parity_B=0
+74280 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+74360 DEBUG: get_excepted(21131,1)
+Test FAILED for data_in_A=21131 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      21131. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+74440 DEBUG: get_excepted(0,-32768)
+Test PASSED for data_in_A=0 data_in_B=-32768 parity_A=0 parity_B=0
+74520 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+74600 DEBUG: get_excepted(32767,0)
+Test PASSED for data_in_A=32767 data_in_B=0 parity_A=1 parity_B=1
+74680 DEBUG: get_excepted(17157,-32768)
+Test PASSED for data_in_A=17157 data_in_B=-32768 parity_A=0 parity_B=0
+74760 DEBUG: get_excepted(32767,-1)
+Test PASSED for data_in_A=32767 data_in_B=-1 parity_A=0 parity_B=0
+74840 DEBUG: get_excepted(4866,0)
+Test PASSED for data_in_A=4866 data_in_B=0 parity_A=0 parity_B=0
+74920 DEBUG: get_excepted(32767,32767)
+Test PASSED for data_in_A=32767 data_in_B=32767 parity_A=0 parity_B=0
+75000 DEBUG: get_excepted(-28839,-32768)
+Test PASSED for data_in_A=-28839 data_in_B=-32768 parity_A=0 parity_B=0
+75080 DEBUG: get_excepted(1,-15133)
+Test PASSED for data_in_A=1 data_in_B=-15133 parity_A=0 parity_B=0
+75160 DEBUG: get_excepted(-17084,-14657)
+Test PASSED for data_in_A=-17084 data_in_B=-14657 parity_A=0 parity_B=0
+75240 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+75320 DEBUG: get_excepted(-26075,17032)
+Test FAILED for data_in_A=-26075 data_in_B=17032 parity_A=1 parity_B=1 
+Expected data:           0  received data: 3850857896. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+75400 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+75480 DEBUG: get_excepted(32767,-29448)
+Test FAILED for data_in_A=32767 data_in_B=-29448 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3330044680. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+75560 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+75640 DEBUG: get_excepted(-10917,-1)
+Test PASSED for data_in_A=-10917 data_in_B=-1 parity_A=0 parity_B=0
+75720 DEBUG: get_excepted(32767,-32139)
+Test FAILED for data_in_A=32767 data_in_B=-32139 parity_A=0 parity_B=1 
+Expected data:           0  received data: 3241868683. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+75800 DEBUG: get_excepted(-32768,18916)
+Test PASSED for data_in_A=-32768 data_in_B=18916 parity_A=0 parity_B=0
+75880 DEBUG: get_excepted(32767,25374)
+Test PASSED for data_in_A=32767 data_in_B=25374 parity_A=0 parity_B=0
+75960 DEBUG: get_excepted(11499,11531)
+Test PASSED for data_in_A=11499 data_in_B=11531 parity_A=0 parity_B=0
+76040 DEBUG: get_excepted(0,1)
+Test PASSED for data_in_A=0 data_in_B=1 parity_A=0 parity_B=1
+76120 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+76200 DEBUG: get_excepted(-11848,-32768)
+Test PASSED for data_in_A=-11848 data_in_B=-32768 parity_A=0 parity_B=0
+76280 DEBUG: get_excepted(-32768,-1)
+Test PASSED for data_in_A=-32768 data_in_B=-1 parity_A=0 parity_B=0
+76360 DEBUG: get_excepted(13310,-32768)
+Test PASSED for data_in_A=13310 data_in_B=-32768 parity_A=0 parity_B=0
+76440 DEBUG: get_excepted(-3288,-6854)
+Test PASSED for data_in_A=-3288 data_in_B=-6854 parity_A=0 parity_B=0
+76520 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=0 parity_B=0
+76600 DEBUG: get_excepted(1,0)
+Test PASSED for data_in_A=1 data_in_B=0 parity_A=0 parity_B=0
+76680 DEBUG: get_excepted(-32768,2905)
+Test PASSED for data_in_A=-32768 data_in_B=2905 parity_A=0 parity_B=0
+76760 DEBUG: get_excepted(-19347,1)
+Test PASSED for data_in_A=-19347 data_in_B=1 parity_A=0 parity_B=0
+76840 DEBUG: get_excepted(1,-1)
+Test PASSED for data_in_A=1 data_in_B=-1 parity_A=0 parity_B=0
+76920 DEBUG: get_excepted(0,32767)
+Test PASSED for data_in_A=0 data_in_B=32767 parity_A=1 parity_B=0
+77000 DEBUG: get_excepted(-1,1)
+Test PASSED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0
+77080 DEBUG: get_excepted(32767,-9797)
+Test PASSED for data_in_A=32767 data_in_B=-9797 parity_A=0 parity_B=0
+77160 DEBUG: get_excepted(1,1)
+Test PASSED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=0
+77240 DEBUG: get_excepted(1,-6382)
+Test FAILED for data_in_A=1 data_in_B=-6382 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294960914. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+77320 DEBUG: get_excepted(32767,4717)
+Test PASSED for data_in_A=32767 data_in_B=4717 parity_A=0 parity_B=0
+77400 DEBUG: get_excepted(0,-13893)
+Test PASSED for data_in_A=0 data_in_B=-13893 parity_A=1 parity_B=0
+77480 DEBUG: get_excepted(18832,0)
+Test PASSED for data_in_A=18832 data_in_B=0 parity_A=0 parity_B=1
+77560 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=1 parity_B=0
+77640 DEBUG: get_excepted(9400,-32768)
+Test FAILED for data_in_A=9400 data_in_B=-32768 parity_A=1 parity_B=0 
+Expected data:           0  received data: 3986948096. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+77720 DEBUG: get_excepted(-12565,12897)
+Test FAILED for data_in_A=-12565 data_in_B=12897 parity_A=0 parity_B=1 
+Expected data:           0  received data: 4132916491. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+77800 DEBUG: get_excepted(32767,3069)
+Test PASSED for data_in_A=32767 data_in_B=3069 parity_A=0 parity_B=0
+77880 DEBUG: get_excepted(0,-6322)
+Test PASSED for data_in_A=0 data_in_B=-6322 parity_A=0 parity_B=0
+77960 DEBUG: get_excepted(-17285,32767)
+Test PASSED for data_in_A=-17285 data_in_B=32767 parity_A=0 parity_B=0
+78040 DEBUG: get_excepted(24292,1)
+Test FAILED for data_in_A=24292 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:      24292. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+78120 DEBUG: get_excepted(1,1)
+Test FAILED for data_in_A=1 data_in_B=1 parity_A=0 parity_B=1 
+Expected data:           0  received data:          1. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+78200 DEBUG: get_excepted(14428,0)
+Test PASSED for data_in_A=14428 data_in_B=0 parity_A=0 parity_B=0
+78280 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=1
+78360 DEBUG: get_excepted(1,31797)
+Test PASSED for data_in_A=1 data_in_B=31797 parity_A=0 parity_B=0
+78440 DEBUG: get_excepted(1,-5490)
+Test FAILED for data_in_A=1 data_in_B=-5490 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294961806. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+78520 DEBUG: get_excepted(-1,32767)
+Test FAILED for data_in_A=-1 data_in_B=32767 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934529. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+78600 DEBUG: get_excepted(4050,32767)
+Test FAILED for data_in_A=4050 data_in_B=32767 parity_A=0 parity_B=1 
+Expected data:           0  received data:  132706350. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+78680 DEBUG: get_excepted(-1,32767)
+Test PASSED for data_in_A=-1 data_in_B=32767 parity_A=0 parity_B=0
+78760 DEBUG: get_excepted(-14852,-32768)
+Test PASSED for data_in_A=-14852 data_in_B=-32768 parity_A=0 parity_B=0
+78840 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+78920 DEBUG: get_excepted(0,0)
+Test PASSED for data_in_A=0 data_in_B=0 parity_A=0 parity_B=1
+79000 DEBUG: get_excepted(13640,-25060)
+Test PASSED for data_in_A=13640 data_in_B=-25060 parity_A=0 parity_B=0
+79080 DEBUG: get_excepted(-32768,1)
+Test FAILED for data_in_A=-32768 data_in_B=1 parity_A=1 parity_B=0 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+79160 DEBUG: get_excepted(-1,-1)
+Test PASSED for data_in_A=-1 data_in_B=-1 parity_A=0 parity_B=0
+79240 DEBUG: get_excepted(17173,1)
+Test FAILED for data_in_A=17173 data_in_B=1 parity_A=1 parity_B=1 
+Expected data:           0  received data:      17173. Expected data_out_parity_exp: 0  received data_out_parity: 0. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+79320 DEBUG: get_excepted(1,-7462)
+Test PASSED for data_in_A=1 data_in_B=-7462 parity_A=0 parity_B=0
+79400 DEBUG: get_excepted(-1,-32768)
+Test FAILED for data_in_A=-1 data_in_B=-32768 parity_A=0 parity_B=1 
+Expected data:           0  received data:      32768. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+79480 DEBUG: get_excepted(1,29192)
+Test PASSED for data_in_A=1 data_in_B=29192 parity_A=0 parity_B=0
+79560 DEBUG: get_excepted(1,-32768)
+Test FAILED for data_in_A=1 data_in_B=-32768 parity_A=1 parity_B=1 
+Expected data:           0  received data: 4294934528. Expected data_out_parity_exp: 0  received data_out_parity: 1. Expected data_in_parity_exp: 1  received data_in_parity_error: 1 
+79640 DEBUG: get_excepted(-9828,11921)
+Test PASSED for data_in_A=-9828 data_in_B=11921 parity_A=0 parity_B=0
+79720 DEBUG: get_excepted(32767,-32768)
+Test PASSED for data_in_A=32767 data_in_B=-32768 parity_A=0 parity_B=0
+79800 DEBUG: get_excepted(-29230,0)
+Test PASSED for data_in_A=-29230 data_in_B=0 parity_A=0 parity_B=0
+79880 DEBUG: get_excepted(32767,19254)
+Test PASSED for data_in_A=32767 data_in_B=19254 parity_A=0 parity_B=0
+79960 DEBUG: get_excepted(16045,0)
+Test PASSED for data_in_A=16045 data_in_B=0 parity_A=1 parity_B=0
+79990 Clock cycles elapsed: 4000
+80040 DEBUG: get_excepted(-32768,-32768)
+Test PASSED for data_in_A=-32768 data_in_B=-32768 parity_A=0 parity_B=0
+[1;30m[101m-----------------------------------
+----------- Test FAILED -----------
+-----------------------------------[0m
+
+Simulation complete via $finish(1) at time 80050 NS + 3
+../tb/fifomult2024_tb.sv:209     $finish;
+xcelium> exit
+See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_1d29bf8b_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_1d29bf8b_00000000.ucd
