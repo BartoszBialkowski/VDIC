@@ -1,0 +1,110 @@
+TOOL:	xrun	23.03-s007: Started on Oct 26, 2024 at 15:17:44 CEST
+xrun
+	-F ../tb/tb.f
+		../../common/fifomult2024.svp
+		fifomult2024_tb.sv
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs_gui
+	+access+r
+	+gui
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	+UVM_TESTNAME=lab02_example
+	-l xrun_gui.log
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+
+	Extracting FSMs for coverage:
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:                2       2
+		Registers:             46      46
+		Scalar wires:          13       -
+		Vectored wires:         2       -
+		Always blocks:          5       5
+		Initial blocks:         6       6
+		Final blocks:           1       1
+		Cont. assignments:      4       5
+		Pseudo assignments:     1       -
+		Covergroup Instances:   0       1
+	Writing initial simulation snapshot: worklib.top:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top.clk top.data_in top.data_in_parity top.data_in_parity_error top.data_in_valid top.data_out top.data_out_parity top.data_out_valid top.rst_n top.scoreboard_be_blk.data_exp_s.data_out top.scoreboard_be_blk.data_exp_s.data_in_parity_error top.scoreboard_be_blk.data_exp_s.data_out_parity
+Created probe 1
+xcelium> run
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 140 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+140 Test FAILED for data_in_A=32767 data_in_B=31501 parity_A=1 parity_B=1 ||| received data: 1032193267  expected data:  1032193267. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 220 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+220 Test FAILED for data_in_A=-1 data_in_B=1 parity_A=0 parity_B=0 ||| received data: 4294967295  expected data:          -1. received data_out_parity_err: 1  expected data_out_parity_error: 0.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 380 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+380 Test FAILED for data_in_A=-1 data_in_B=-10734 parity_A=0 parity_B=1 ||| received data:      10734  expected data:       10734. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 520 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+520 Test FAILED for data_in_A=-1 data_in_B=-18413 parity_A=0 parity_B=1 ||| received data:      18413  expected data:       18413. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 760 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+760 Test FAILED for data_in_A=32767 data_in_B=0 parity_A=1 parity_B=0 ||| received data:          0  expected data:           0. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 1160 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+1160 Test FAILED for data_in_A=32767 data_in_B=0 parity_A=1 parity_B=0 ||| received data:          0  expected data:           0. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 1240 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+1240 Test FAILED for data_in_A=32524 data_in_B=0 parity_A=0 parity_B=0 ||| received data:          0  expected data:           0. received data_out_parity_err: 1  expected data_out_parity_error: 0.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 1400 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+1400 Test FAILED for data_in_A=12165 data_in_B=19273 parity_A=0 parity_B=1 ||| received data:  234456045  expected data:   234456045. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+xmsim: *E,ERRSEV (../tb/fifomult2024_tb.sv,466): (time 1720 NS).
+top.scoreboard_be_blk.verify_result.CHK_RESULT
+1720 Test FAILED for data_in_A=1 data_in_B=6521 parity_A=1 parity_B=0 ||| received data:       6521  expected data:        6521. received data_out_parity_err: 0  expected data_out_parity_error: 1.
+[1;30m[101m-----------------------------------
+----------- Test FAILED -----------
+-----------------------------------[0m
+
+Simulation complete via $finish(1) at time 1840 NS + 0
+../tb/fifomult2024_tb.sv:272     $finish;
+xcelium> ^C
+xcelium> exit
+See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_3ed4d03f_726a6668.ucm
+  data               :  ./cov_work/scope/test/icc_3ed4d03f_726a6668.ucd
+TOOL:	xrun	23.03-s007: Exiting on Oct 26, 2024 at 15:31:57 CEST  (total: 00:14:13)

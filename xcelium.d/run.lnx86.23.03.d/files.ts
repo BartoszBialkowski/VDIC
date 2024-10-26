@@ -4,4 +4,6 @@
 1728048935 /home/student/bbialkowski/VDIC/common/tinyalu/tinyalu.sv
 1697728271 /home/student/bbialkowski/VDIC/lab01example/tb/tinyalu_tb.sv
 1728646902 /home/student/bbialkowski/VDIC/common/fifomult2024.svp
-1729250077 /home/student/bbialkowski/VDIC/lab01/tb/fifomult2024_tb.sv
+1729251054 /home/student/bbialkowski/VDIC/lab01/tb/fifomult2024_tb.sv
+1729003469 /home/student/bbialkowski/VDIC/lab02example/tb/tinyalu_tb.sv
+1729956076 /home/student/bbialkowski/VDIC/lab02/tb/fifomult2024_tb.sv

@@ -730,4 +730,10 @@ Expected data:           0  received data: 4294934528. Expected data_out_parity_
 
 Simulation complete via $finish(1) at time 80050 NS + 3
 ../tb/fifomult2024_tb.sv:209     $finish;
+xcelium> ...Regained control from SimVision
+-------------------------------------
+
 xcelium> 
+xmsim: *W,CMUSEX: Control-D in interactive input - one more to exit.
+xcelium> exit
+TOOL:	xrun	23.03-s007: Exiting on Oct 18, 2024 at 14:09:10 CEST  (total: 00:53:45)

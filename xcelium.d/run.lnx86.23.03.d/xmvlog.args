@@ -6,8 +6,8 @@
 ./xcelium.d/run.lnx86.23.03.d
 -RUNMODE
 -sv
-lab01/tb/../../common/fifomult2024.svp
-lab01/tb/fifomult2024_tb.sv
+lab02/tb/../../common/fifomult2024.svp
+lab02/tb/fifomult2024_tb.sv
 -CDSLIB
 ./xcelium.d/run.lnx86.23.03.d/cdsrun.lib
 -HDLVAR
