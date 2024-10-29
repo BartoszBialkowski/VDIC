@@ -1,16 +1,24 @@
 xrun: 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun	23.03-s007: Started on Oct 26, 2024 at 17:21:20 CEST
+TOOL:	xrun	23.03-s007: Started on Oct 29, 2024 at 20:21:51 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/bbialkowski/VDIC/.dvt/lab02.build
-		-F lab02/tb/tb.f
+	-f /home/student/bbialkowski/VDIC/.dvt/lab03.build
+		-F lab03/tb/tb.f
 			../../common/fifomult2024.svp
-			fifomult2024_tb.sv
-Recompiling... reason: file './lab02/tb/fifomult2024_tb.sv' is newer than expected.
-	expected: Sat Oct 26 15:31:36 2024
-	actual:   Sat Oct 26 17:21:16 2024
-file: lab02/tb/fifomult2024_tb.sv
-	module worklib.top:sv
+			fifomult2024_tb_pkg.svh
+			fifomult2024_bfm.sv
+			tpgen.sv
+			coverage.sv
+			scoreboard.sv
+			top.sv
+file: lab03/tb/fifomult2024_bfm.sv
+	interface worklib.fifomult2024_bfm:sv
 		errors: 0, warnings: 0
-TOOL:	xrun	23.03-s007: Exiting on Oct 26, 2024 at 17:21:21 CEST  (total: 00:00:01)
+file: lab03/tb/tpgen.sv
+	module worklib.tpgen:sv
+		errors: 0, warnings: 0
+file: lab03/tb/scoreboard.sv
+	module worklib.scoreboard:sv
+		errors: 0, warnings: 0
+TOOL:	xrun	23.03-s007: Exiting on Oct 29, 2024 at 20:21:51 CET  (total: 00:00:00)

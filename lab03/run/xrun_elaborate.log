@@ -1,0 +1,73 @@
+TOOL:	xrun	23.03-s007: Started on Oct 29, 2024 at 20:23:15 CET
+xrun
+	-elaborate
+	-l xrun_elaborate.log
+	-F ../tb/tb.f
+		../../common/fifomult2024.svp
+		fifomult2024_tb_pkg.svh
+		fifomult2024_bfm.sv
+		tpgen.sv
+		coverage.sv
+		scoreboard.sv
+		top.sv
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		fifomult2024_tb_pkg
+		top
+
+	Extracting FSMs for coverage:
+		worklib.tpgen
+		worklib.coverage
+		worklib.scoreboard
+		worklib.top
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+	Generating native compiled code:
+		worklib.fifomult2024:svp <0x5f191310>
+			streams:  17, words:  8968
+		worklib.scoreboard:sv <0x5207bb30>
+			streams:   9, words: 19589
+		worklib.coverage:sv <0x37cdd390>
+			streams:   5, words:  8676
+		worklib.tpgen:sv <0x18acb4b6>
+			streams:   5, words: 19415
+		worklib.top:sv <0x4a94f72f>
+			streams:   5, words:   488
+		worklib.fifomult2024_bfm:sv <0x4758768a>
+			streams:   2, words:  3090
+	Building instance specific data structures.
+	Performing constant object marking (COM) analysis.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                Instances  Unique
+		Modules:                5       5
+		Interfaces:             1       1
+		Verilog packages:       1       1
+		Registers:             49      49
+		Scalar wires:          13       -
+		Vectored wires:         2       -
+		Always blocks:          5       5
+		Initial blocks:         6       6
+		Final blocks:           1       1
+		Cont. assignments:      4       5
+		Pseudo assignments:     5       -
+		Covergroup Instances:   0       1
+	Writing initial simulation snapshot: worklib.top:sv
+TOOL:	xrun	23.03-s007: Exiting on Oct 29, 2024 at 20:23:15 CET  (total: 00:00:00)
