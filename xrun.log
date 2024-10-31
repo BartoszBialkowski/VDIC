@@ -1,5 +1,5 @@
 xrun: 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun	23.03-s007: Started on Oct 29, 2024 at 20:21:51 CET
+TOOL:	xrun	23.03-s007: Started on Oct 31, 2024 at 13:30:03 CET
 xrun
 	+compile
 	+sv
@@ -12,13 +12,7 @@ xrun
 			coverage.sv
 			scoreboard.sv
 			top.sv
-file: lab03/tb/fifomult2024_bfm.sv
-	interface worklib.fifomult2024_bfm:sv
-		errors: 0, warnings: 0
-file: lab03/tb/tpgen.sv
-	module worklib.tpgen:sv
-		errors: 0, warnings: 0
-file: lab03/tb/scoreboard.sv
-	module worklib.scoreboard:sv
-		errors: 0, warnings: 0
-TOOL:	xrun	23.03-s007: Exiting on Oct 29, 2024 at 20:21:51 CET  (total: 00:00:00)
+Recompiling... reason: file './common/tinyalu/tinyalu_pkg.sv' is newer than expected.
+	expected: Fri Oct  4 14:56:55 2024
+	actual:   Tue Oct 22 12:22:59 2024
+TOOL:	xrun	23.03-s007: Exiting on Oct 31, 2024 at 13:30:03 CET  (total: 00:00:00)

@@ -18,11 +18,6 @@
 module tpgen(fifomult2024_bfm bfm);
     
 import fifomult2024_tb_pkg::*;
-	
-bit signed [15:0] 	data_in_A_local;
-bit signed [15:0] 	data_in_B_local;
-paritycheck_t 		parity_A_local;
-paritycheck_t 		parity_B_local;	
 
 //---------------------------------
 // Generating random parity for DUT
@@ -38,19 +33,6 @@ function paritycheck_t get_paritycheck();
     endcase // case (parity_result)
 endfunction : get_paritycheck
 
-//---------------------------------
-//Parity check for input data
-task get_parity(
-        input shortint   data_in,
-        input paritycheck_t valid,
-        output bit       parity
-    );
-    parity = ^data_in;
-
-    if (valid == PARITY_ERR)
-        parity = !parity;
-
-endtask : get_parity
 
 //---------------------------------
 // Generating random data for DUT input
@@ -90,44 +72,24 @@ endtask : reset_probability
 // Tester main
 
 initial begin : tpgen
+	
+	bit signed [15:0] 	data_in_A_local;
+	bit signed [15:0] 	data_in_B_local;
+	paritycheck_t 		parity_A_local;
+	paritycheck_t 		parity_B_local;	
     bfm.reset_fifo();
+	
     repeat (15000) begin : tpgen_main_blk
 	    
 	    reset_probability();
-	    
- 		@(negedge bfm.clk);
-	        if(bfm.busy_out) begin
-	            @(negedge bfm.busy_out);
-	            @(negedge bfm.clk);
-		    end    
+   
 	 
-		        data_in_A_local      = get_data();
-		        parity_A_local 		 = get_paritycheck();
-	            bfm.data_in = data_in_A_local;
-	            get_parity(bfm.data_in, parity_A_local ,bfm.data_in_parity);
-	            bfm.data_in_valid = 1'b1;
-
-      	@(negedge bfm.clk)begin;
-        	bfm.data_in_valid = 1'b0;
-	    end  	
+		data_in_A_local      = get_data();
+		parity_A_local 		 = get_paritycheck();
+	    data_in_B_local      = get_data();
+		parity_B_local 		 = get_paritycheck();
 	    
-	        if(bfm.busy_out) begin
-	            @(negedge bfm.busy_out);
-	        	@(negedge bfm.clk);    
-		    end    
-	
-		        data_in_B_local      = get_data();
-		        parity_B_local 		 = get_paritycheck();
-	            bfm.data_in = data_in_B_local;           
-	            get_parity(bfm.data_in, parity_B_local , bfm.data_in_parity);
-	            bfm.data_in_valid = 1'b1;
-
-        @(negedge bfm.clk)begin
-        	bfm.data_in_valid = 1'b0;
-	    end    
-    // print coverage after each loop
-    // $strobe("%0t coverage: %.4g\%",$time, $get_coverage());
-    // if($get_coverage() == 100) break;
+	    bfm.send_data(data_in_A_local, data_in_B_local , parity_A_local ,parity_B_local);
     end : tpgen_main_blk
     $finish;
 end : tpgen

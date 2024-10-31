@@ -93,3 +93,10 @@ s92(26Oct2024:17:21:20):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.d
 s93(29Oct2024:20:06:42):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build 
 s94(29Oct2024:20:18:22):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build 
 s95(29Oct2024:20:21:51):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build 
+s96(31Oct2024:12:24:53):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build 
+s97(31Oct2024:12:26:38):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build 
+s98(31Oct2024:12:28:35):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build 
+s99(31Oct2024:12:29:03):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build 
+s100(31Oct2024:12:34:11):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build 
+s101(31Oct2024:13:26:01):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build 
+s102(31Oct2024:13:30:03):  xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build 

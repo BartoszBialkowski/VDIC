@@ -61,11 +61,7 @@ wire                 data_in_parity_error;
 test_result_t        test_result = TEST_PASSED;
 
 bit signed [15:0] 	data_in_A_local;
-bit signed [15:0] 	data_in_B_local;
-//bit signed [15:0] 	data_in_A_sb;
-bit 				sb_valid;
-//bit 				parity_A_sb;	
-	
+bit signed [15:0] 	data_in_B_local;		
 paritycheck_t 		parity_A_local;
 paritycheck_t 		parity_B_local;	
 //------------------------------------------------------------------------------
@@ -137,13 +133,13 @@ initial begin : coverage
     forever begin : sample_cov
         @(posedge clk);
 	    	if (!rst_n) data_in_coverage_cntr = 1'b0;
-			if(data_in_valid === 1'b1 && data_in_coverage_cntr == 1'b1)begin
+			if(data_in_valid == 1'b1 && data_in_coverage_cntr == 1'b1)begin
 	            data_coverage_B = data_in;
 	           coverage_parity_B = data_in_parity;
 	            data_in_coverage_cntr = 1'b0;
 				c_00_FF.sample();
 	        end
-	        else if(data_in_valid === 1'b1 && data_in_coverage_cntr == 1'b0)begin
+	        else if(data_in_valid == 1'b1 && data_in_coverage_cntr == 1'b0)begin
 	            data_coverage_A = data_in;
 	            coverage_parity_A = data_in_parity;
 	            data_in_coverage_cntr = 1'b1;
@@ -156,24 +152,6 @@ initial begin : coverage
         
     end
 end : coverage
-//initial begin : coverage
-//    c_00_FF = new();
-//    forever begin : sample_cov
-//        @(posedge clk);
-//        if((sb_valid == 1) || !rst_n) begin
-//            c_00_FF.sample();
-//
-//            /* #1step delay is necessary before checking for the coverage
-//             * as the .sample methods run in parallel threads
-//             */
-//            #1;
-//            if($get_coverage() == 100) break; //disable, if needed
-//
-////             you can print the coverage after each sample
-//            $strobe("%0t coverage: %.4g\%",$time, $get_coverage());
-//        end
-//    end
-//end : coverage
 
 //------------------------------------------------------------------------------
 // Clock generator
@@ -312,7 +290,6 @@ task reset_fifo();
     data_in_valid   = 1'b0;
     data_in_parity   = 1'b0;
     rst_n = 1'b0;
-	sb_valid = 1'b0;
 	sb_data_q.delete();
     @(negedge clk);
     rst_n = 1'b1;
@@ -426,39 +403,20 @@ endfunction
 //-------------------------------------------------------------------
 
       data_packet_t               sb_data_q   [$];
-//
-//    always @(posedge clk) begin:scoreboard_fe_blk
-//        if(data_in_valid == 1 && sb_valid == 1)begin
-//            sb_data_q.push_front(
-//                data_packet_t'({data_in_A_local, data_in_B_local, parity_A_local, parity_B_local})
-//            );
-//            sb_valid <= 1'b0;
-//        end
-//        else if(data_in_valid == 1 && sb_valid == 0)begin
-//            sb_valid <= 1'b1;
-//        end
-//        else if(data_in_valid == 0 && sb_valid == 1)begin
-//            sb_valid <= 1'b1;
-//        end
-//        else begin
-//               sb_valid <= data_in_valid;
-//        end
-//    end
 
-  
-  data_packet_t                 data_buf; //purely for scoreboard
-    bit data_in_valid_cntr = 1'b0;  // only for scoreboard
+  data_packet_t                 scoreboard_data; 
+    bit data_in_valid_cntr = 1'b0;  
 
     always @(posedge clk) begin:scoreboard_fe_blk
-        if(data_in_valid === 1'b1 && data_in_valid_cntr == 1'b1)begin
-            data_buf.data_in_B = data_in;
-            data_buf.parity_B = data_in_parity;
-            sb_data_q.push_front(data_buf);
+        if(data_in_valid == 1'b1 && data_in_valid_cntr == 1'b1)begin
+            scoreboard_data.data_in_B = data_in;
+            scoreboard_data.parity_B = data_in_parity;
+            sb_data_q.push_front(scoreboard_data);
             data_in_valid_cntr = 1'b0;
         end
-        else if(data_in_valid === 1'b1 && data_in_valid_cntr == 1'b0)begin
-            data_buf.data_in_A = data_in;
-            data_buf.parity_A = data_in_parity;
+        else if(data_in_valid == 1'b1 && data_in_valid_cntr == 1'b0)begin
+            scoreboard_data.data_in_A = data_in;
+            scoreboard_data.parity_A = data_in_parity;
             data_in_valid_cntr = 1'b1;
         end
 

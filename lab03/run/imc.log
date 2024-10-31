@@ -1,3 +1,10 @@
-IMC(64): 23.03-s004: (c) Copyright 1995-2023 Cadence Design Systems Inc - Simulator version: 23.03-s007 - Coverage engine version: 23.03-s007
-imc: *I,RUNLD: Successfully loaded run cov_work/scope/merged_results.
-Starting gui mode
+imc: *I,RUNLD: Successfully loaded run /home/student/bbialkowski/VDIC/lab03/run/cov_work/scope/merged_results.
+imc: *W,REPDEP: This is a legacy report and no future enhancement is planned for this report. It is recommended that yoimc: *I,RUNLD: Successfully loaded run cov_work/scope/merged_results.
+                                     Overall Average      Overall Covered      Code Average         Code Covered         Fsm Average          Fsm Covered          Functional Average   Functional Covered   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top                                      n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  n/a                  
+|--bfm                                   96.00%               96.47% (82/85)       96.00%               96.47% (82/85)       n/a                  n/a                  n/a                  n/a                  
+|--tpgen_i                               97.22%               95.65% (44/46)       97.22%               95.65% (44/46)       n/a                  n/a                  n/a                  n/a                  
+|--coverage_i                            97.92%               99.10% (219/221)     95.83%               96.92% (63/65)       n/a                  n/a                  100.00%              100.00% (156/156)    
+|--scoreboard_i                          85.82%               85.85% (91/106)      85.82%               85.85% (91/106)      n/a                  n/a                  n/a                  n/a                  
+|--DUT                                   100.00%              100.00% (56/56)      100.00%              100.00% (56/56)      n/a                  n/a                  n/a                  n/a                  

@@ -1,4 +1,4 @@
-TOOL:	xrun	23.03-s007: Started on Oct 29, 2024 at 20:23:15 CET
+TOOL:	xrun	23.03-s007: Started on Oct 31, 2024 at 13:44:22 CET
 xrun
 	-F ../tb/tb.f
 		../../common/fifomult2024.svp
@@ -49,7 +49,7 @@ Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /eda/
 		Modules:                5       5
 		Interfaces:             1       1
 		Verilog packages:       1       1
-		Registers:             49      49
+		Registers:             53      53
 		Scalar wires:          13       -
 		Vectored wires:         2       -
 		Always blocks:          5       5
@@ -7711,7 +7711,7 @@ xcelium> run
 -----------------------------------[0m
 
 Simulation complete via $finish(1) at time 1049060 NS + 0
-../tb/tpgen.sv:132     $finish;
+../tb/tpgen.sv:94     $finish;
 xcelium> exit
 See ./cov_work/scope/lab03example/icc.com file for message(s) on coverage constant object marking
 
@@ -7722,6 +7722,6 @@ coverage setup:
   testname :  lab03example
 
 coverage files:
-  model(design data) :  ./cov_work/scope/icc_56b7caec_5a23c81a.ucm
-  data               :  ./cov_work/scope/lab03example/icc_56b7caec_5a23c81a.ucd
-TOOL:	xrun	23.03-s007: Exiting on Oct 29, 2024 at 20:23:18 CET  (total: 00:00:03)
+  model(design data) :  ./cov_work/scope/icc_759624c5_5a23c81a.ucm
+  data               :  ./cov_work/scope/lab03example/icc_759624c5_5a23c81a.ucd
+TOOL:	xrun	23.03-s007: Exiting on Oct 31, 2024 at 13:44:25 CET  (total: 00:00:03)

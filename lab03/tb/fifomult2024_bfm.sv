@@ -59,6 +59,49 @@ task reset_fifo();
     rst_n = 1'b1;
 endtask : reset_fifo
 
+task get_parity(
+        input shortint   data_in,
+        input paritycheck_t valid,
+        output bit       parity
+    );
+    parity = ^data_in;
+
+    if (valid == PARITY_ERR)
+        parity = !parity;
+
+endtask : get_parity
+
+task send_data(input shortint data_A, input shortint data_B, input paritycheck_t parity_A,input paritycheck_t parity_B);
+
+   	@(negedge clk);
+	if(bfm.busy_out) begin
+	    @(negedge busy_out);
+	    @(negedge clk);
+	end    
+	 
+	    data_in = data_A;
+	    get_parity(data_in, parity_A ,data_in_parity);
+	    data_in_valid = 1'b1;
+
+      	@(negedge clk)begin;
+        	data_in_valid = 1'b0;
+	    end  	
+	    
+	    if(busy_out) begin
+	        @(negedge busy_out);
+	        @(negedge clk);    
+		end    
+	
+	    data_in = data_B;           
+	            get_parity(data_in, parity_B, data_in_parity);
+	            data_in_valid = 1'b1;
+
+        @(negedge clk)begin
+        	data_in_valid = 1'b0;
+	    end    
+
+endtask : send_data
+
 
 endinterface : fifomult2024_bfm
 

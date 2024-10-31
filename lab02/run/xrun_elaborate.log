@@ -1,4 +1,4 @@
-TOOL:	xrun	23.03-s007: Started on Oct 26, 2024 at 17:21:37 CEST
+TOOL:	xrun	23.03-s007: Started on Oct 31, 2024 at 13:10:16 CET
 xrun
 	-elaborate
 	-l xrun_elaborate.log
@@ -33,15 +33,15 @@ xrun
 	Generating native compiled code:
 		worklib.fifomult2024:svp <0x69e30975>
 			streams:  17, words:  8968
-		worklib.top:sv <0x1406410e>
-			streams:  23, words: 52770
+		worklib.top:sv <0x3f8195bf>
+			streams:  23, words: 52586
 	Building instance specific data structures.
 	Performing constant object marking (COM) analysis.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                Instances  Unique
 		Modules:                2       2
-		Registers:             51      51
+		Registers:             50      50
 		Scalar wires:          13       -
 		Vectored wires:         2       -
 		Always blocks:          5       5
@@ -51,4 +51,4 @@ xrun
 		Pseudo assignments:     1       -
 		Covergroup Instances:   0       1
 	Writing initial simulation snapshot: worklib.top:sv
-TOOL:	xrun	23.03-s007: Exiting on Oct 26, 2024 at 17:21:38 CEST  (total: 00:00:01)
+TOOL:	xrun	23.03-s007: Exiting on Oct 31, 2024 at 13:10:17 CET  (total: 00:00:01)

@@ -1,4 +1,4 @@
-TOOL:	xrun	23.03-s007: Started on Oct 26, 2024 at 17:21:37 CEST
+TOOL:	xrun	23.03-s007: Started on Oct 31, 2024 at 13:10:16 CET
 xrun
 	-compile
 	-l xrun_compile.log
@@ -26,4 +26,4 @@ file: ../tb/../../common/fifomult2024.svp
 file: ../tb/fifomult2024_tb.sv
 	module worklib.top:sv
 		errors: 0, warnings: 0
-TOOL:	xrun	23.03-s007: Exiting on Oct 26, 2024 at 17:21:37 CEST  (total: 00:00:00)
+TOOL:	xrun	23.03-s007: Exiting on Oct 31, 2024 at 13:10:16 CET  (total: 00:00:00)
