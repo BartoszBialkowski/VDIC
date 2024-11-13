@@ -104,3 +104,7 @@ s99::(31Oct2024:12:29:03):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/
 s100::(31Oct2024:12:34:11):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab02.build )
 s101::(31Oct2024:13:26:01):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build )
 s102::(31Oct2024:13:30:03):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build )
+s103::(13Nov2024:10:38:43):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab03.build )
+s104::(13Nov2024:10:41:15):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build )
+s105::(13Nov2024:10:43:04):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build )
+s106::(13Nov2024:10:46:22):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build )

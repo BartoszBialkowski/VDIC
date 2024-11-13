@@ -1,18 +1,22 @@
 xrun: 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun	23.03-s007: Started on Oct 31, 2024 at 13:30:03 CET
+TOOL:	xrun	23.03-s007: Started on Nov 13, 2024 at 10:46:22 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/bbialkowski/VDIC/.dvt/lab03.build
-		-F lab03/tb/tb.f
-			../../common/fifomult2024.svp
-			fifomult2024_tb_pkg.svh
-			fifomult2024_bfm.sv
-			tpgen.sv
-			coverage.sv
-			scoreboard.sv
+	-f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build
+		-F lab04part01/tb/tb.f
+			classes/shape_c.svh
+			classes/polygon_c.svh
+			classes/rectangle_c.svh
+			classes/triangle_c.svh
+			classes/circle_c.svh
+			classes/shape_factory.svh
+			classes/shape_reporter.svh
 			top.sv
 Recompiling... reason: file './common/tinyalu/tinyalu_pkg.sv' is newer than expected.
 	expected: Fri Oct  4 14:56:55 2024
 	actual:   Tue Oct 22 12:22:59 2024
-TOOL:	xrun	23.03-s007: Exiting on Oct 31, 2024 at 13:30:03 CET  (total: 00:00:00)
+file: lab04part01/tb/top.sv
+	module worklib.top:sv
+		errors: 0, warnings: 0
+TOOL:	xrun	23.03-s007: Exiting on Nov 13, 2024 at 10:46:22 CET  (total: 00:00:00)
