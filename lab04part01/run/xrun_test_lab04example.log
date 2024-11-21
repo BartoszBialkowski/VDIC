@@ -11,49 +11,49 @@ This is: polygon
 (0.00 5.00)
 (2.00 4.00)
 (2.00 1.00)
-Area is: can not be calculated for generic polygon
+Area: can not be calculated for generic polygon
 ---------------------------------------------------------------------------------
 This is: rectangle
 (0.10 0.00)
 (0.10 2.00)
 (2.30 2.00)
 (2.30 0.00)
-Area is: 4.40
+Area: 4.00
 ---------------------------------------------------------------------------------
 This is: rectangle
 (0.20 -0.30)
 (-1.80 0.70)
 (0.20 4.70)
 (2.20 3.70)
-Area is: 10.00
+Area: 5.00
 ---------------------------------------------------------------------------------
 This is: triangle
 (0.50 0.50)
 (0.00 2.00)
 (2.00 2.00)
-Area is: 1.50
+Area: 1.50
 ---------------------------------------------------------------------------------
 This is: rectangle
 (0.00 0.00)
 (-2.00 1.00)
 (0.00 5.00)
 (2.00 4.00)
-Area is: 10.00
+Area: 5.00
 ----------------------------------------------------------------------------------------
 This is: circle
 (0.00 0.00)
 (1.00 1.00)
 radius: 1.41
-Area is: 6.28
+Area: 6.28
 ----------------------------------------------------------------------------------------
 This is: circle
 (-10.00 1.00)
 (1.20 1.00)
 radius: 11.20
-Area is: 394.07
+Area: 394.07
 ---------------------------------------------------------------------------------
 This is: polygon
-Area is: can not be calculated for generic polygon
+Area: can not be calculated for generic polygon
 xmsim: *W,RNQUIE: Simulation is complete.
 xcelium> exit
 See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking

@@ -17,8 +17,6 @@ UVM_PLI
 ../tb/classes/shape_factory.svh
 ../tb/classes/shape_reporter.svh
 ../tb/top.sv
--DEFINE
-DEBUG
 -NOWARN
 DSEM2009
 -NOWARN

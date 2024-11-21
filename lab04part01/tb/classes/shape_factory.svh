@@ -10,30 +10,18 @@ class shape_factory;
 		rectangle_c rectangle_o;
 		polygon_c polygon_o;
 
-		coordinates_struct points_q[$];
-		coordinates_struct points_q_tmp[$];
 
 		static int ctr_local = 0;
-		coordinates_struct p1;
-		coordinates_struct p2;
-		coordinates_struct p3;
-		coordinates_struct p4;
 		real d1 = 0.0;
 		real d2 = 0.0;
 
-		points_q_tmp = p;
 
 		ctr_local = 0;
 
 		foreach(p[i]) ctr_local++;
 
-		p1 = points_q_tmp.pop_front();
-		p2 = points_q_tmp.pop_front();
-		p3 = points_q_tmp.pop_front();
-		p4 = points_q_tmp.pop_front();
-
-		d1 = ((p1.x - p3.x)**2 + (p1.y - p3.y)**2)**0.5;
-		d2 = ((p2.x - p4.x)**2 + (p2.y - p4.y)**2)**0.5;
+		d1 = ((p[0].x - p[2].x)**2 + (p[0].y - p[2].y)**2)**0.5;
+		d2 = ((p[1].x - p[3].x)**2 + (p[1].y - p[3].y)**2)**0.5;
 
 		//  check if rectangle
 		if (ctr_local == 4 && d1 != d2) ctr_local = 5;

@@ -1,0 +1,4 @@
+package fifomult2024_tb_pkg;
+                          |
+xmvlog: *W,TSNSPK (../tb/fifomult2024_tb_pkg.svh,1|26): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.

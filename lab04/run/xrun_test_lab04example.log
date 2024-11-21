@@ -1,0 +1,22 @@
+package fifomult2024_tb_pkg;
+                          |
+xmvlog: *W,TSNSPK (../tb/fifomult2024_tb_pkg.svh,1|26): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+xmvlog: *W,SPDUSD: Include directory ../tb/. given but not used.
+	Top level design units:
+		fifomult2024_tb_pkg
+		top
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+0 DEBUG: reset_fifo
+See ./cov_work/scope/test/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+
+
+
+
+
+coverage files:
+
+

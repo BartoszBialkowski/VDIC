@@ -15,7 +15,7 @@
  */
 module top;
 
-	coordinates_struct x_y_pos;
+	coordinates_struct x_y_position;
 	coordinates_struct coordinates_q  [$];
 	shape_c shape_o;
 
@@ -43,11 +43,11 @@ module top;
 
 					else if (line[c] == " " || line[c] == 10) begin
 						if (i % 2 == 0) begin
-							x_y_pos.x = input_str.atoreal();
+							x_y_position.x = input_str.atoreal();
 						end
 						else begin
-							x_y_pos.y = input_str.atoreal();
-							coordinates_q.push_back(x_y_pos);
+							x_y_position.y = input_str.atoreal();
+							coordinates_q.push_back(x_y_position);
 						end
 						input_str = "";
 						i++;

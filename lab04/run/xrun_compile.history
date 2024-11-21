@@ -1,0 +1,1 @@
+s1(14Nov2024:18:47:36):  xrun -compile -l xrun_compile.log -F ../tb/tb.f -v93 -q -define DEBUG +nowarnDSEM2009 +nowarnDSEMEL +nowarnCGDEFN +nowarnCOVUTA +nowarnBADPRF +nowarnXCLGNOPTM +nowarnRNDXCELON +nowarnSAWSTP -xmlibdirname INCA_libs +overwrite -nocopyright -coverage all -covoverwrite -covfile xrun_covfile.txt 
