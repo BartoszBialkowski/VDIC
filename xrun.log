@@ -1,21 +1,71 @@
 xrun: 23.03-s007: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun	23.03-s007: Started on Nov 15, 2024 at 14:30:15 CET
+TOOL:	xrun	23.03-s007: Started on Nov 22, 2024 at 13:39:21 CET
 xrun
 	+compile
 	+sv
-	-f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build
-		-F lab04part01/tb/tb.f
-			classes/shape_c.svh
-			classes/polygon_c.svh
-			classes/rectangle_c.svh
-			classes/triangle_c.svh
-			classes/circle_c.svh
-			classes/shape_factory.svh
-			classes/shape_reporter.svh
+	-f /home/student/bbialkowski/VDIC/.dvt/lab05.build
+		-F lab05/tb/tb.f
+			fifomult2024_tb_pkg.sv
+			fifomult2024_bfm.sv
+			../../common/fifomult2024.svp
 			top.sv
-Recompiling... reason: file './common/tinyalu/tinyalu_pkg.sv' is newer than expected.
-	expected: Fri Oct  4 14:56:55 2024
-	actual:   Tue Oct 22 12:22:59 2024
-file: lab04part01/tb/classes/shape_c.svh
-file: lab04part01/tb/classes/shape_reporter.svh
-TOOL:	xrun	23.03-s007: Exiting on Nov 15, 2024 at 14:30:15 CET  (total: 00:00:00)
+			+incdir+classes
+			+incdir+.
+			+nowarn+DSEMEL
+			-uvm
+			-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+			+UVM_NO_RELNOTES
+			+UVM_VERBOSITY=MEDIUM
+			-linedebug
+			-fsmdebug
+			-uvmlinedebug
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+xrun: *W,BADPRF: The -linedebug option may have an adverse performance impact.
+file: lab05/tb/fifomult2024_tb_pkg.sv
+endfunction : reset_probability
+          |
+xmvlog: *E,EXPENT (lab05/tb/classes/random_tpgen.svh,56|10): expecting the keyword 'endtask' [10.2.1(IEEE)].
+(`include file: lab05/tb/classes/random_tpgen.svh line 56, file: lab05/tb/fifomult2024_tb_pkg.sv line 61)
+endfunction : reset_probability
+          |
+xmvlog: *E,EXPENT (lab05/tb/classes/corners_tpgen.svh,72|10): expecting the keyword 'endtask' [10.2.1(IEEE)].
+(`include file: lab05/tb/classes/corners_tpgen.svh line 72, file: lab05/tb/fifomult2024_tb_pkg.sv line 62)
+	package worklib.fifomult2024_tb_pkg:sv
+		errors: 2, warnings: 0
+file: lab05/tb/fifomult2024_bfm.sv
+import fifomult2024_tb_pkg::*;
+                         |
+xmvlog: *E,MULPAK (lab05/tb/fifomult2024_bfm.sv,19|25): Multiple (2) packages named "fifomult2024_tb_pkg" were found in the searched libraries: 
+		-> found verilog_package worklib.fifomult2024_tb_pkg:sv (VST)
+		-> found verilog_package worklib.fifomult2024_tb_pkg:svh (VST).
+import fifomult2024_tb_pkg::*;
+                         |
+xmvlog: *E,NOPBIND (lab05/tb/fifomult2024_bfm.sv,19|25): Package fifomult2024_tb_pkg could not be bound.
+        input paritycheck_t valid,
+                          |
+xmvlog: *E,SVNOTY (lab05/tb/fifomult2024_bfm.sv,64|26): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+task send_data(input shortint data_A, input shortint data_B, input paritycheck_t parity_A,input paritycheck_t parity_B);
+                                                                               |
+xmvlog: *E,SVNOTY (lab05/tb/fifomult2024_bfm.sv,74|79): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+task send_data(input shortint data_A, input shortint data_B, input paritycheck_t parity_A,input paritycheck_t parity_B);
+                                                                                                            |
+xmvlog: *E,SVNOTY (lab05/tb/fifomult2024_bfm.sv,74|108): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+	interface worklib.fifomult2024_bfm:sv
+		errors: 5, warnings: 0
+file: lab05/tb/top.sv
+import fifomult2024_tb_pkg::*;
+                         |
+xmvlog: *E,MULPAK (lab05/tb/top.sv,20|25): Multiple (2) packages named "fifomult2024_tb_pkg" were found in the searched libraries: 
+		-> found verilog_package worklib.fifomult2024_tb_pkg:sv (VST)
+		-> found verilog_package worklib.fifomult2024_tb_pkg:svh (VST).
+import fifomult2024_tb_pkg::*;
+                         |
+xmvlog: *E,NOPBIND (lab05/tb/top.sv,20|25): Package fifomult2024_tb_pkg could not be bound.
+	module worklib.top:sv
+		errors: 2, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun	23.03-s007: Exiting on Nov 22, 2024 at 13:39:22 CET  (total: 00:00:01)

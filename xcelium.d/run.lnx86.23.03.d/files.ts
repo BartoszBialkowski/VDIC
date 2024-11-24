@@ -27,3 +27,6 @@
 1731614753 /home/student/bbialkowski/VDIC/lab04part02/tb/fifomult2024_tb_pkg.svh
 1731615349 /home/student/bbialkowski/VDIC/lab04part02/tb/fifomult2024_bfm.sv
 1731613286 /home/student/bbialkowski/VDIC/lab04part02/tb/top.sv
+1732223587 /home/student/bbialkowski/VDIC/lab05/tb/fifomult2024_tb_pkg.sv
+1732221950 /home/student/bbialkowski/VDIC/lab05/tb/fifomult2024_bfm.sv
+1732220568 /home/student/bbialkowski/VDIC/lab05/tb/top.sv

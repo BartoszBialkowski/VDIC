@@ -142,3 +142,7 @@ s137::(15Nov2024:14:02:49):( xrun +compile +sv -f /home/student/bbialkowski/VDIC
 s138::(15Nov2024:14:03:38):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build )
 s139::(15Nov2024:14:16:32):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build )
 s140::(15Nov2024:14:30:15):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab04_part1.build )
+s141::(22Nov2024:12:30:52):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab05.build )
+s142::(22Nov2024:12:31:46):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab05.build )
+s143::(22Nov2024:12:33:18):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab05.build )
+s144::(22Nov2024:13:39:22):( xrun +compile +sv -f /home/student/bbialkowski/VDIC/.dvt/lab05.build )
