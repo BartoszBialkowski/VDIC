@@ -7,7 +7,6 @@
 1729251054 /home/student/bbialkowski/VDIC/lab01/tb/fifomult2024_tb.sv
 1729003469 /home/student/bbialkowski/VDIC/lab02example/tb/tinyalu_tb.sv
 1730374448 /home/student/bbialkowski/VDIC/lab02/tb/fifomult2024_tb.sv
-1730226543 /home/student/bbialkowski/VDIC/lab03/tb/fifomult2024_tb_pkg.svh
 1730377744 /home/student/bbialkowski/VDIC/lab03/tb/fifomult2024_bfm.sv
 1730378064 /home/student/bbialkowski/VDIC/lab03/tb/tpgen.sv
 1730227566 /home/student/bbialkowski/VDIC/lab03/tb/coverage.sv
@@ -21,12 +20,13 @@
 1731675815 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/shape_factory.svh
 1731677414 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/shape_reporter.svh
 1731676589 /home/student/bbialkowski/VDIC/lab04part01/tb/top.sv
-1731605735 /home/student/bbialkowski/VDIC/lab04/tb/fifomult2024_tb_pkg.svh
 1731491924 /home/student/bbialkowski/VDIC/lab04/tb/fifomult2024_bfm.sv
 1731492342 /home/student/bbialkowski/VDIC/lab04/tb/top.sv
-1731614753 /home/student/bbialkowski/VDIC/lab04part02/tb/fifomult2024_tb_pkg.svh
 1731615349 /home/student/bbialkowski/VDIC/lab04part02/tb/fifomult2024_bfm.sv
 1731613286 /home/student/bbialkowski/VDIC/lab04part02/tb/top.sv
 1732223587 /home/student/bbialkowski/VDIC/lab05/tb/fifomult2024_tb_pkg.sv
 1732221950 /home/student/bbialkowski/VDIC/lab05/tb/fifomult2024_bfm.sv
 1732220568 /home/student/bbialkowski/VDIC/lab05/tb/top.sv
+1732833099 /home/student/bbialkowski/VDIC/lab06/tb/fifomult2024_tb_pkg.sv
+1732882324 /home/student/bbialkowski/VDIC/lab06/tb/fifomult2024_bfm.sv
+1732566627 /home/student/bbialkowski/VDIC/lab06/tb/top.sv

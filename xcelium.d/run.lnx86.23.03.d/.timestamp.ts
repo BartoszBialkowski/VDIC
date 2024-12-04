@@ -1,4 +1,7 @@
 1730374448 /home/student/bbialkowski/VDIC/lab02/tb/fifomult2024_tb.sv
+1732566627 /home/student/bbialkowski/VDIC/lab06/tb/top.sv
+1732563636 /home/student/bbialkowski/VDIC/lab06_V3/tb/fifomult2024_tb_pkg.sv
+1732833099 /home/student/bbialkowski/VDIC/lab06/tb/fifomult2024_tb_pkg.sv
 1731675815 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/shape_factory.svh
 1732220568 /home/student/bbialkowski/VDIC/lab05/tb/top.sv
 1730229667 /home/student/bbialkowski/VDIC/lab03/tb/scoreboard.sv
@@ -7,12 +10,16 @@
 1730227566 /home/student/bbialkowski/VDIC/lab03/tb/coverage.sv
 1731492342 /home/student/bbialkowski/VDIC/lab04/tb/top.sv
 1731675313 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/triangle_c.svh
+1732566150 /home/student/bbialkowski/VDIC/lab06/tb/fifomult2024_tb_pkg2.sv
 1731676067 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/rectangle_c.svh
+1732220568 /home/student/bbialkowski/VDIC/lab06_v2/tb/top.sv
 1729003469 /home/student/bbialkowski/VDIC/lab02example/tb/tinyalu_tb.sv
 1731677414 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/shape_reporter.svh
 1730228732 /home/student/bbialkowski/VDIC/lab03/tb/top.sv
 1697728271 /home/student/bbialkowski/VDIC/lab01example/tb/tinyalu_tb.sv
+1732562277 /home/student/bbialkowski/VDIC/lab06_v2/tb/fifomult2024_bfm.sv
 1731613286 /home/student/bbialkowski/VDIC/lab04part02/tb/top.sv
+1732882324 /home/student/bbialkowski/VDIC/lab06/tb/fifomult2024_bfm.sv
 1730377744 /home/student/bbialkowski/VDIC/lab03/tb/fifomult2024_bfm.sv
 1731491924 /home/student/bbialkowski/VDIC/lab04/tb/fifomult2024_bfm.sv
 1731676589 /home/student/bbialkowski/VDIC/lab04part01/tb/top.sv
@@ -27,6 +34,9 @@
 1730226543 /home/student/bbialkowski/VDIC/lab03/tb/fifomult2024_tb_pkg.svh
 1731676011 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/circle_c.svh
 1731676686 /home/student/bbialkowski/VDIC/lab04part01/tb/classes/shape_c.svh
+1732565523 /home/student/bbialkowski/VDIC/lab06_V3/tb/fifomult2024_bfm.sv
+1732563636 /home/student/bbialkowski/VDIC/lab06_v2/tb/fifomult2024_tb_pkg.sv
 1728048979 /home/student/bbialkowski/VDIC/common/tinyalu/single_cycle.sv
+1732565533 /home/student/bbialkowski/VDIC/lab06_V3/tb/top.sv
 1730378064 /home/student/bbialkowski/VDIC/lab03/tb/tpgen.sv
 1729251054 /home/student/bbialkowski/VDIC/lab01/tb/fifomult2024_tb.sv

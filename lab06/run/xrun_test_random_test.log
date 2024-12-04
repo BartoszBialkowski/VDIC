@@ -1,0 +1,121 @@
+TOOL:	xrun	23.03-s007: Started on Nov 29, 2024 at 13:48:47 CET
+xrun
+	-F ../tb/tb.f
+		fifomult2024_tb_pkg.sv
+		fifomult2024_bfm.sv
+		../../common/fifomult2024.svp
+		top.sv
+		+incdir+classes
+		+nowarn+DSEMEL
+		+nowarnBADPRF
+		-uvm
+		-uvmhome /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv
+		+UVM_NO_RELNOTES
+		+UVM_VERBOSITY=MEDIUM
+		-linedebug
+		-fsmdebug
+		-uvmlinedebug
+	-v93
+	+nowarnDSEM2009
+	+nowarnDSEMEL
+	+nowarnCGDEFN
+	+nowarnCOVUTA
+	+nowarnBADPRF
+	+nowarnXCLGNOPTM
+	+nowarnRNDXCELON
+	+nowarnSAWSTP
+	-xmlibdirname INCA_libs
+	+overwrite
+	-nocopyright
+	-coverage all
+	-covoverwrite
+	-covfile xrun_covfile.txt
+	-covtest random_test
+	+UVM_TESTNAME=random_test
+	-l xrun_test_random_test.log
+
+   User defined plus("+") options:
+	+UVM_NO_RELNOTES
+	+UVM_VERBOSITY=MEDIUM
+
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /eda/cadence/2023-24/RHELx86/XCELIUM_23.03.007/tools/xcelium/files/xmsimrc
+xcelium> source /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO @ 0: reporter [RNTST] Running test random_test...
+[1;30m[103m*** Created tpgen type: random_tpgen ***[0m
+
+----------------------------------------------------------------
+Name                     Type                        Size  Value
+----------------------------------------------------------------
+uvm_test_top             random_test                 -     @1936
+  env_h                  env                         -     @2013
+    command_f            uvm_tlm_fifo #(T)           -     @2044
+      get_ap             uvm_analysis_port           -     @2278
+      get_peek_export    uvm_get_peek_imp            -     @2178
+      put_ap             uvm_analysis_port           -     @2228
+      put_export         uvm_put_imp                 -     @2126
+    command_monitor_h    command_monitor             -     @2507
+      ap                 uvm_analysis_port           -     @2597
+    coverage_h           coverage                    -     @2342
+      analysis_imp       uvm_analysis_imp            -     @2392
+    drive_h              driver                      -     @2311
+      command_port       uvm_get_port                -     @2653
+    random_tpgen         random_tpgen                -     @2045
+      command_port       uvm_put_port                -     @2705
+    result_monitor_h     result_monitor              -     @2538
+      ap                 uvm_analysis_port           -     @2759
+    scoreboard_h         scoreboard                  -     @2372
+      analysis_imp       uvm_analysis_imp            -     @2474
+      cmd_f              uvm_tlm_analysis_fifo #(T)  -     @2790
+        analysis_export  uvm_analysis_imp            -     @3039
+        get_ap           uvm_analysis_port           -     @2988
+        get_peek_export  uvm_get_peek_imp            -     @2890
+        put_ap           uvm_analysis_port           -     @2939
+        put_export       uvm_put_imp                 -     @2841
+----------------------------------------------------------------
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 799960000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+[1;30m[102m-----------------------------------
+----------- Test PASSED -----------
+-----------------------------------[0m
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_catcher.svh(705) @ 799960000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(847) @ 799960000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    3
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/REPORT/CATCHER]     1
+
+Simulation complete via $finish(1) at time 799960 NS + 59
+/eda/cadence/2021-22/RHELx86/XCELIUM_21.03.009/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+See ./cov_work/scope/random_test/icc.com file for message(s) on coverage constant object marking
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  random_test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_22f573fb_1bb53487.ucm
+  data               :  ./cov_work/scope/random_test/icc_22f573fb_1bb53487.ucd
+TOOL:	xrun	23.03-s007: Exiting on Nov 29, 2024 at 13:48:49 CET  (total: 00:00:02)
